@@ -1,0 +1,75 @@
+@import '../../node_modules/swiper/swiper-bundle';
+
+// reset
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+// variables
+:root {
+	--body-color: #000000;
+	--blue-background: #01049B;
+}
+
+// main styles
+html,
+body {
+	width: 100%;
+	min-height: 100%;
+	font-size: 1em;
+	color: var(--body-color);
+	background: url("../assets/images/bg.jpg") no-repeat;
+	background-size: cover;
+}
+
+%header-footer-style {
+	padding: 54px 49px;
+	display: flex;
+	justify-content: space-between;
+}
+
+%header-footer-flex-style {
+	display: flex;
+	justify-content: space-between;
+	&:nth-child(1) {
+		gap: 60px;
+	}
+	&:nth-child(2) {
+		gap: 76px;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1440px;
+}
+
+.header {
+	@extend %header-footer-style;
+}
+
+.header-flex {
+	@extend %header-footer-flex-style;
+}
+
+.footer {
+	@extend %header-footer-style;
+	flex: 0 0 auto;
+	background-color: var(--blue-background);
+}
+
+.footer-flex {
+	@extend %header-footer-flex-style;
+}
