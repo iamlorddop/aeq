@@ -1,4 +1,5 @@
 @import '../../node_modules/swiper/swiper-bundle';
+@import '../../node_modules/animate.css/animate';
 
 // fonts
 @font-face {
@@ -54,6 +55,12 @@ button {
 	outline: none;
 }
 
+input,
+textarea {
+	outline: none;
+	border: none;
+}
+
 // variables
 :root {
 	--body-color: #000000;
@@ -65,6 +72,10 @@ button {
 	--border-color: #CCCCCC;
 	--btn-click-contact: #E5E5E5;
 	--burger-background: #EBEBEB;
+	--background-bullet: #01049B;
+	--border-bullet: #B3B3B3;
+	--modal-background: #01049B;
+	--input-color: #777777;
 }
 
 // main styles
@@ -78,6 +89,7 @@ body {
 	background: var(--body-background);
 }
 
+// styles for extend
 %header-footer-style {
 	padding: 54px 49px;
 	display: flex;
@@ -98,10 +110,137 @@ body {
 	}
 }
 
+// modal form
+.modal-background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	min-width: 100%;
+	min-height: 100%;
+	background: var(--modal-background);
+	opacity: 0.9;
+	z-index: 998;
+}
+
+.modal-form {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	padding: 68px 56px;
+	display: none;
+	background: var(--white-color);
+	border-radius: 15px;
+	transform: translate(-50%);
+	z-index: 999;
+	.title {
+		margin-bottom: 50px;
+		display: flex;
+		gap: 18px;
+		font-size: 4.16667vw;
+		color: var(--body-color);
+		text-transform: none;
+	}
+}
+
+.modal-form-flex {
+	display: flex;
+	justify-content: space-between;
+	gap: 56px;
+}
+
+.form {
+	label,
+	.text {
+		font-weight: 500;
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+}
+
+.form-flex {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 18px;
+}
+
+.form__input {
+	input,
+	textarea {
+		padding: 15px 20px;
+		margin-top: 10px;
+		display: block;
+		width: 100%;
+		font-size: 19px;
+		font-family: inherit;
+		color: var(--input-color);
+		border: 1px solid var(--body-color);
+		border-radius: 30px;
+	}
+	textarea {
+		height: 180px;
+		resize: none;
+	}
+	&:nth-child(-n + 3) {
+		flex-grow: 1;
+	}
+	&:nth-child(4) {
+		width: 100%;
+	}
+}
+
+.form-checkbox {
+	margin: 40px 0 20px;
+}
+
+.real-checkbox {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	z-index: -1;
+}
+
+.custom-checkbox {
+	position: relative;
+	margin-right: 18px;
+	display: inline-block;
+	vertical-align: sub;
+	width: 20px;
+	height: 20px;
+	border: 1px solid var(--body-color);
+	border-radius: 2px;
+}
+
+.custom-checkbox::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: var(--background-bullet);
+	transform: translate(-50%, -50%) scale(0);
+	transition: .2s ease-in;
+}
+
+.real-checkbox:checked + .custom-checkbox::before {
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.form-submit {
+	margin-top: 40px;
+}
+
+// content, header, main, footer, burger-menu
 .wrapper {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
+	background: url("../assets/images/bg.png") no-repeat;
+	background-size: contain;
 	overflow: hidden;
 }
 
@@ -125,8 +264,8 @@ body {
 .header {
 	@extend %header-footer-style;
 	.nav-list__item a {
-		transition: color .2s ease-in, text-shadow .2s ease-in;
-		&:hover,
+		transition: color .2s linear, text-shadow .2s linear;
+		&:active,
 		.nav-list__item.active a {
 			color: var(--blue-color);
 			text-shadow: 0.4px 0 0 var(--blue-color);
@@ -144,6 +283,7 @@ body {
 
 .burger-menu-button {
 	display: none;
+	cursor: pointer;
 }
 
 .burger-menu {
@@ -188,23 +328,29 @@ body {
 	position: relative;
 	width: 24px;
 	height: 24px;
-	&::before,
-	&::after {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
+	cursor: pointer;
+	span {
+		position: relative;
 		display: block;
+		top: 0;
+		left: 10px;
 		width: 2px;
 		height: 24px;
 		background: var(--body-color);
 		border-radius: 2px;
-	}
-	&::before {
-		transform: rotate(45deg);
-	}
-	&::after {
 		transform: rotate(-45deg);
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 2px;
+			height: 24px;
+			background: var(--body-color);
+			border-radius: 2px;
+			transform: rotate(90deg);
+		}
 	}
 }
 
@@ -282,6 +428,7 @@ body {
 	@extend %header-footer-flex-style;
 }
 
+// sections
 section {
 	.title {
 		margin-bottom: 40px;
@@ -296,11 +443,10 @@ section {
 }
 
 .btn {
-	padding: 16px 0;
+	padding: 16px 60px;
 	max-width: 260px;
-	min-width: 175px;
 	font-family: inherit;
-	font-style: 20px;
+	font-size: 20px;
 	color: var(--white-color);
 	background: var(--blue-color);
 	border-radius: 30px;
@@ -310,8 +456,10 @@ section {
 	}
 }
 
+
+// about
 .about {
-	margin: 90px 0;
+	margin: 140px 0;
 	.title {
 		margin-bottom: 25px;
 		font-size: 75px;
@@ -378,6 +526,7 @@ section {
 	}
 }
 
+// advantages
 .advantages {
 	margin-bottom: 130px;
 }
@@ -399,6 +548,7 @@ section {
 	}
 }
 
+// services
 .services {
 	margin-bottom: 140px;
 	.subtitle {
@@ -494,6 +644,7 @@ section {
 	}
 }
 
+// partners
 .partners {
 	margin-bottom: 138px;
 }
@@ -509,6 +660,7 @@ section {
 	align-items: center;
 }
 
+// team
 .team {
 	margin-bottom: 72px;
 	.container {
@@ -522,6 +674,7 @@ section {
 
 .team-flex {
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
 	gap: 20px;
 }
@@ -540,9 +693,11 @@ section {
 
 .team-flex__img {
 	margin-bottom: 20px;
+	display: block;
 	border-radius: 15px;
 }
 
+// contacts
 .contacts {
 	position: relative;
 }
@@ -578,6 +733,7 @@ section {
 	width: 50px;
 }
 
+// media queries
 @media (max-width: 1470px) {
 	.footer,
 	.header {
@@ -588,6 +744,14 @@ section {
 }
 
 @media (max-width: 1090px) {
+	.modal-form {
+		.title {
+			gap: 0;
+			flex-wrap: wrap;
+			font-size: 4.01204vw;
+		}
+	}
+
 	.footer-flex,
 	.header-flex {
 		justify-content: center;
@@ -659,6 +823,44 @@ section {
 }
 
 @media (max-width: 640px) {
+	.modal-form {
+		padding: 20px;
+		.title {
+			margin-bottom: 18px;
+			font-size: 6.25978vw;
+		}
+	}
+
+	.form {
+		label,
+		.text {
+			font-size: 10px;
+		}
+	}
+
+	.form__input {
+		input,
+		textarea {
+			font-size: 14px;
+		}
+	}
+
+	.modal-form-flex {
+		gap: 0;
+	}
+
+	.form-checkbox {
+		margin: 30px 0 10px;
+	}
+
+	.checkbox {
+		display: flex;
+	}
+
+	.form-submit {
+		margin-top: 20px;
+	}
+
 	.header,
 	.footer {
 		padding: 20px;
@@ -702,12 +904,18 @@ section {
 		}
 	}
 
+	.advantages {
+		.text {
+			font-size: 14px;
+		}
+	}
+
 	.advantages-flex__item {
 		padding: 20px 15px;
 		display: flex;
 		align-items: center;
 		img {
-			margin: 0 40px 0 0;
+			margin: 0 25px 0 0;
 			display: block;
 			width: 60px;
 		}
@@ -762,13 +970,107 @@ section {
 		display: none;
 	}
 
-	.swiper-partners {
+	.swiper-partners,
+	.swiper-team {
 		display: block;
-		max-width: 600px;
+	}
+
+	.swiper-partners {
+		height: 190px;
 	}
 
 	.swiper-team {
-		display: block;
-		max-width: 600px;
+		height: 380px;
+	}
+
+	.swiper-slide-partners,
+	.swiper-slide-team {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.swiper-button-prev-partners,
+	.swiper-button-next-partners,
+	.swiper-button-prev-team,
+	.swiper-button-next-team {
+		width: 20px;
+		height: 1px;
+		background: var(--body-color);
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 1px;
+			height: 8px;
+			background: var(--body-color);
+			
+		}
+	}
+
+	.swiper-button-prev-partners,
+	.swiper-button-prev-team {
+		&::before,
+		&::after {
+			left: 1px;
+		}
+		&::before {
+			top: -1px;
+			transform: rotate(-45deg);
+		}
+		&::after {
+			top: -6px;
+			transform: rotate(45deg);
+		}
+	}
+
+	.swiper-button-next-partners,
+	.swiper-button-next-team  {
+		&::before,
+		&::after {
+			right: 1px;
+		}
+		&::before {
+			top: -6px;
+			transform: rotate(-45deg);
+		}
+		&::after {
+			top: -1px;
+			transform: rotate(45deg);
+		}
+	}
+
+	.swiper-pagination-bullet {
+		width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10px));
+		height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 10px));
+		background: none;
+		border: 1px solid var(--border-bullet);
+	}
+
+	.swiper-pagination-bullet-active {
+		background: var(--background-bullet);
+		border: none;
+	}
+
+	.team-flex__item {
+		.subtitle {
+			font-size: 20px;
+		}
+		.text {
+			font-size: 10px;
+		}
+	}
+
+	.team-flex__img {
+		width: 260px;
+	}
+}
+
+@media (max-width: 360px) {
+	.about {
+		.title {
+			font-size: 30px;
+		}
 	}
 }
