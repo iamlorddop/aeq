@@ -8,6 +8,46 @@
 	<title>AEQ консалтинговая компания</title>
 </head>
 <body>
+	<div class="modal-background"></div>
+	<div class="modal-form">
+		<div class="modal-form-flex">
+			<h2 class="title">Заказать <span>консультацию</span></h2>
+			<div class="cross">
+				<span></span>
+			</div>
+		</div>
+		<form action="#" class="form">
+			<div class="form-flex">
+				<div class="form__input">
+					<label for="form-name">Ваше имя*</label>
+					<input type="text" placeholder="Введите имя" name="name" id="form-name">
+				</div>
+				<div class="form__input">
+					<label for="form-e-mail">Ваш e-mail*</label>
+					<input type="email" placeholder="Введите e-mail" name="e-mail" id="form-e-mail">
+				</div>
+				<div class="form__input">
+					<label for="form-phone">Ваш телефон</label>
+					<input type="tel" placeholder="Введите телефон" name="phone" id="form-phone">
+				</div>
+				<div class="form__input">
+					<label for="form-question">Ваш вопрос</label>
+					<textarea name="question" id="form-question"></textarea>
+				</div>
+			</div>
+			<div class="form-checkbox">
+				<label class="checkbox">
+					<input type="checkbox" checked class="real-checkbox">
+					<span class="custom-checkbox"></span>
+					<span class="text">
+						Я согласен на сбор персональных данных
+					</span>
+				</label>
+			</div>
+			<p class="text">* - поля, обязательные к заполнению</p>
+			<button type="submit" class="btn form-submit">Заказать</button>
+		</form>
+	</div>
 	<div class="wrapper">
 		<div class="content">
 			<header class="header">
@@ -62,7 +102,9 @@
 							<img src="assets/images/sprite.svg#logo" alt="лого">
 						</a>
 			
-						<div class="cross"></div>
+						<div class="cross">
+							<span></span>
+						</div>
 					</div>
 			
 					<div class="burger-main">
@@ -131,15 +173,15 @@
 					<div class="container">
 						<h2 class="title">Преимущества</h2>
 						<div class="advantages-flex">
-							<div class="advantages-flex__item">
+							<div class="advantages-flex__item wow animate__animated animate__fadeInRight" data-wow-duration="1.5s">
 								<img src="assets/images/solution.png" alt="solution">
 								<p class="text">Простое и актуальное <br>решение задач</p>
 							</div>
-							<div class="advantages-flex__item">
+							<div class="advantages-flex__item wow animate__animated animate__fadeInRight" data-wow-duration="2s">
 								<img src="assets/images/security.png" alt="solution">
 								<p class="text">Конфиденциальность <br>и индивидуальный подход</p>
 							</div>
-							<div class="advantages-flex__item">
+							<div class="advantages-flex__item wow animate__animated animate__fadeInRight" data-wow-duration="2.5s">
 								<img src="assets/images/expertise.png" alt="solution">
 								<p class="text">Международная экспертиза <br>и высокие стандарты</p>
 							</div>
@@ -151,7 +193,7 @@
 						<h2 class="title">Услуги</h2>
 						<p class="subtitle">Решение сложных задач.<br><span>Просто.</span></p>
 						<p class="text">Независимая команда с многолетним опытом<br>в управлении активами, консалтинге и финансах<br>подберёт подходящее вам решение.</p>
-						<div class="services-flex">
+						<div class="services-flex wow animate__animated animate__fadeInRight" data-wow-duration="2s">
 							<div class="services-flex__item-image">
 								<img src="assets/images/folder.png" alt="">
 							</div>
@@ -165,7 +207,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="services-flex services-flex-reverse">
+						<div class="services-flex services-flex-reverse wow animate__animated animate__fadeInLeft" data-wow-duration="2s">
 							<div class="services-flex__item">
 								<h3 class="title">Управление инвестициями:</h3>
 								<ul class="services-flex__item-list">
@@ -178,7 +220,7 @@
 								<img src="assets/images/safe.png" alt="">
 							</div>
 						</div>
-						<div class="services-flex">
+						<div class="services-flex wow animate__animated animate__fadeInRight" data-wow-duration="2s">
 							<div class="services-flex__item-image">
 								<img src="assets/images/law.png" alt="">
 							</div>
@@ -191,16 +233,16 @@
 								</ul>
 							</div>
 						</div>
-						<div class="services-contact-us">
+						<div class="services-contact-us wow animate__animated animate__fadeInLeft" data-wow-duration="2s">
 							<p class="text">Связаться с нами</p>
-							<button class="btn">Связаться</button>
+							<button class="btn btn-services-js">Связаться</button>
 						</div>
 					</div>
 				</section>
 				<section class="partners">
 					<div class="container">
 						<h2 class="title">Партнеры</h2>
-						<div class="partners-flex">
+						<div class="partners-flex wow animate__animated animate__fadeInUp" data-wow-duration="2s">
 							<div class="partners__item">
 								<img src="assets/images/pareto-print.png" alt="Парето-Принт">
 							</div>
@@ -223,22 +265,22 @@
 						<!-- Slider main container -->
 						<div class="swiper swiper-partners">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide">
+								<div class="swiper-slide swiper-slide-partners">
 									<img src="assets/images/pareto-print.png" alt="Парето-Принт">
 								</div>
-								<div class="swiper-slide">
+								<div class="swiper-slide swiper-slide-partners">
 									<img src="assets/images/azbuka.png" alt="Азбука">
 								</div>
-								<div class="swiper-slide">
+								<div class="swiper-slide swiper-slide-partners">
 									<img src="assets/images/mozaik.png" alt="Мозаик">
 								</div>
-								<div class="swiper-slide">
+								<div class="swiper-slide swiper-slide-partners">
 									<img src="assets/images/strelka.png" alt="Стрелка">
 								</div>
-								<div class="swiper-slide">
+								<div class="swiper-slide swiper-slide-partners">
 									<img src="assets/images/cinema_pioner.png" alt="Кинотеатр пионер">
 								</div>
-								<div class="swiper-slide">
+								<div class="swiper-slide swiper-slide-partners">
 									<img src="assets/images/cinema_park.png" alt="Кино синема">
 								</div>
 							</div>
@@ -253,32 +295,32 @@
 					<div class="container">
 						<h2 class="title">Команда</h2>
 						<div class="team-flex">
-							<div class="team-flex__item">
+							<div class="team-flex__item wow animate__animated animate__fadeInUp" data-wow-duration="1.5s">
 								<img src="assets/images/team_member.png" alt="Виктор Самойлов" class="team-flex__img">
 								<h3 class="subtitle">Виктор<br>Самойлов</h3>
 								<p class="text">Управляющий партнер компании AEQ</p>
 							</div>
-							<div class="team-flex__item">
+							<div class="team-flex__item wow animate__animated animate__fadeInUp" data-wow-duration="2s">
 								<img src="assets/images/team_member.png" alt="Виктор Самойлов" class="team-flex__img">
 								<h3 class="subtitle">Виктор<br>Самойлов</h3>
 								<p class="text">Управляющий партнер компании AEQ</p>
 							</div>
-							<div class="team-flex__item">
+							<div class="team-flex__item wow animate__animated animate__fadeInUp" data-wow-duration="2.5s">
 								<img src="assets/images/team_member.png" alt="Виктор Самойлов" class="team-flex__img">
 								<h3 class="subtitle">Виктор<br>Самойлов</h3>
 								<p class="text">Управляющий партнер компании AEQ</p>
 							</div>
-							<div class="team-flex__item">
+							<div class="team-flex__item wow animate__animated animate__fadeInUp" data-wow-duration="1.5s">
 								<img src="assets/images/team_member.png" alt="Виктор Самойлов" class="team-flex__img">
 								<h3 class="subtitle">Виктор<br>Самойлов</h3>
 								<p class="text">Управляющий партнер компании AEQ</p>
 							</div>
-							<div class="team-flex__item">
+							<div class="team-flex__item wow animate__animated animate__fadeInUp" data-wow-duration="2s">
 								<img src="assets/images/team_member.png" alt="Виктор Самойлов" class="team-flex__img">
 								<h3 class="subtitle">Виктор<br>Самойлов</h3>
 								<p class="text">Управляющий партнер компании AEQ</p>
 							</div>
-							<div class="team-flex__item">
+							<div class="team-flex__item wow animate__animated animate__fadeInUp" data-wow-duration="2.5s">
 								<img src="assets/images/team_member.png" alt="Виктор Самойлов" class="team-flex__img">
 								<h3 class="subtitle">Виктор<br>Самойлов</h3>
 								<p class="text">Управляющий партнер компании AEQ</p>
@@ -289,42 +331,42 @@
 							<!-- Additional required wrapper -->
 							<div class="swiper-wrapper">
 								<!-- Slides -->
-								<div class="swiper-slide">
+								<div class="swiper-slide swiper-slide-team">
 									<div class="team-flex__item">
 										<img src="assets/images/team_member.png" alt="Виктор Самойлов" class="team-flex__img">
 										<h3 class="subtitle">Виктор<br>Самойлов</h3>
 										<p class="text">Управляющий партнер компании AEQ</p>
 									</div>
 								</div>
-								<div class="swiper-slide">
+								<div class="swiper-slide swiper-slide-team">
 									<div class="team-flex__item">
 										<img src="assets/images/team_member.png" alt="Виктор Самойлов" class="team-flex__img">
 										<h3 class="subtitle">Виктор<br>Самойлов</h3>
 										<p class="text">Управляющий партнер компании AEQ</p>
 									</div>
 								</div>
-								<div class="swiper-slide">
+								<div class="swiper-slide swiper-slide-team">
 									<div class="team-flex__item">
 										<img src="assets/images/team_member.png" alt="Виктор Самойлов" class="team-flex__img">
 										<h3 class="subtitle">Виктор<br>Самойлов</h3>
 										<p class="text">Управляющий партнер компании AEQ</p>
 									</div>
 								</div>
-								<div class="swiper-slide">
+								<div class="swiper-slide swiper-slide-team">
 									<div class="team-flex__item">
 										<img src="assets/images/team_member.png" alt="Виктор Самойлов" class="team-flex__img">
 										<h3 class="subtitle">Виктор<br>Самойлов</h3>
 										<p class="text">Управляющий партнер компании AEQ</p>
 									</div>
 								</div>
-								<div class="swiper-slide">
+								<div class="swiper-slide swiper-slide-team">
 									<div class="team-flex__item">
 										<img src="assets/images/team_member.png" alt="Виктор Самойлов" class="team-flex__img">
 										<h3 class="subtitle">Виктор<br>Самойлов</h3>
 										<p class="text">Управляющий партнер компании AEQ</p>
 									</div>
 								</div>
-								<div class="swiper-slide">
+								<div class="swiper-slide swiper-slide-team">
 									<div class="team-flex__item">
 										<img src="assets/images/team_member.png" alt="Виктор Самойлов" class="team-flex__img">
 										<h3 class="subtitle">Виктор<br>Самойлов</h3>
