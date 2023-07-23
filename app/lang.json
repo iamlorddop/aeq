@@ -1,0 +1,190 @@
+{
+	"nav-about" : {
+		"ru" : "о нас",
+		"en" : "about"
+	},
+	"nav-advantages" : {
+		"ru" : "Преимущества",
+		"en" : "advantages"
+	},
+	"nav-services" : {
+		"ru" : "услуги",
+		"en" : "services"
+	},
+	"nav-partners" : {
+		"ru" : "партнеры",
+		"en" : "partners"
+	},
+	"nav-team" : {
+		"ru" : "команда",
+		"en" : "team"
+	},
+	"nav-contacts" : {
+		"ru" : "контакты",
+		"en" : "contacts"
+	},
+	"about-title" : {
+		"ru" : "Консалтинговая компания AEQ",
+		"en" : "Consulting company AEQ"
+	},
+	"about-text1" : {
+		"ru" : "Помогаем инвестиционным фондам, бизнесу и частным лицам сохранять и приумножать активы.",
+		"en" : "We help investment funds, businesses and individuals to save and increase assets."
+	},
+	"about-text2" : {
+		"ru" : "Наш международный опыт и многолетняя экспертиза в управлении активами, консалтинге, юриспруденции и финансах помогут трансформировать ваш бизнес своевременно и комфортно. Мы гордимся репутацией честного, компетентного и стабильного партнёра.",
+		"en" : "Our international experience and many years of expertise in asset management, consulting, law and finance will help you transform your business in a timely and comfortable way. We are proud of our reputation as an honest, competent and stable partner."
+	},
+	"about-read-more" : {
+		"ru" : "Подробнее",
+		"en" : "Read more"
+	},
+	"advantages-title" : {
+		"ru" : "Преимущества",
+		"en" : "Advantages"
+	},
+	"advantages-text1" : {
+		"ru" : "Простое и актуальное решение задач",
+		"en" : "Simple and up-to-date solution"
+	},
+	"advantages-text2" : {
+		"ru" : "Конфиденциальность и индивидуальный подход",
+		"en" : "Privacy and individuality"
+	},
+	"advantages-text3" : {
+		"ru" : "Международная экспертиза и высокие стандарты",
+		"en" : "International expertise and high standards"
+	},
+	"services-subtitle" : {
+		"ru" : "Решение сложных задач.<br><span>Просто.</span>",
+		"en" : "Solving complicated problems.<br><span>Simple.</span>"
+	},
+	"services-text1" : {
+		"ru" : "Независимая команда с многолетним опытом<br>в управлении активами, консалтинге и финансах<br>подберёт подходящее вам решение.",
+		"en" : "An independent team with years of experience<br>in asset management, consulting and finance<br>will find the right solution for you."
+	},
+	"services-title1" : {
+		"ru" : "Управление активами:",
+		"en" : "Asset management:"
+	},
+	"services-list-text1" : {
+		"ru" : "управление фондами",
+		"en" : "fund management"
+	},
+	"services-list-text2" : {
+		"ru" : "консультирование по вопросам стратегии развития бизнеса",
+		"en" : "advising on business development strategy"
+	},
+	"services-list-text3" : {
+		"ru" : "структурирование владения активами и корпоративного управления",
+		"en" : "structuring asset ownership and corporate governance"
+	},
+	"services-list-text4" : {
+		"ru" : "планирование наследования",
+		"en" : "estate planning"
+	},
+	"services-title2" : {
+		"ru" : "Управление инвестициями:",
+		"en" : "Investment management:"
+	},
+	"services-list-text5" : {
+		"ru" : "разработка и анализ персональных инвестиционных стратегий",
+		"en" : "development and analysis of personal investment strategies"
+	},
+	"services-list-text6" : {
+		"ru" : "организация финансирования",
+		"en" : "organization of financing"
+	},
+	"services-list-text7" : {
+		"ru" : "консультирование по прямым инвестициям в бизнес и недвижимость",
+		"en" : "advising on direct investment in business and real estate"
+	},
+	"services-title3" : {
+		"ru" : "Юридические и финансовые услуги:",
+		"en" : "Legal and financial services:"
+	},
+	"services-list-text8" : {
+		"ru" : "комплексное юридическое сопровождение юридических и физических лиц (включая сопровождение крупных M&A сделок)",
+		"en" : "complex legal support of legal entities and individuals (including support of large M&A transactions)"
+	},
+	"services-list-text9" : {
+		"ru" : "финансовое планирование",
+		"en" : "financial planning"
+	},
+	"services-list-text10" : {
+		"ru" : "ведение консолидированной отчетности по всем активам",
+		"en" : "consolidated reporting on all assets"
+	},
+	"services-list-text11" : {
+		"ru" : "Связаться с нами",
+		"en" : "Contact us"
+	},
+	"services-btn" : {
+		"ru" : "Связаться",
+		"en" : "Contact"
+	},
+	"partners-title" : {
+		"ru" : "партнеры",
+		"en" : "partners"
+	},
+	"team-title" : {
+		"ru" : "команда",
+		"en" : "team"
+	},
+	"team-subtitle1" : {
+		"ru" : "Виктор<br>Самойлов",
+		"en" : "Victor<br>Samoilov"
+	},
+	"team-text1" : {
+		"ru" : "Управляющий партнер компании AEQ",
+		"en" : "AEQ Managing Partner"
+	},
+	"team-subtitle2" : {
+		"ru" : "Виктор<br>Самойлов",
+		"en" : "Victor<br>Samoilov"
+	},
+	"team-text2" : {
+		"ru" : "Управляющий партнер компании AEQ",
+		"en" : "AEQ Managing Partner"
+	},
+	"team-subtitle3" : {
+		"ru" : "Виктор<br>Самойлов",
+		"en" : "Victor<br>Samoilov"
+	},
+	"team-text3" : {
+		"ru" : "Управляющий партнер компании AEQ",
+		"en" : "AEQ Managing Partner"
+	},
+	"team-subtitle4" : {
+		"ru" : "Виктор<br>Самойлов",
+		"en" : "Victor<br>Samoilov"
+	},
+	"team-text4" : {
+		"ru" : "Управляющий партнер компании AEQ",
+		"en" : "AEQ Managing Partner"
+	},
+	"team-subtitle5" : {
+		"ru" : "Виктор<br>Самойлов",
+		"en" : "Victor<br>Samoilov"
+	},
+	"team-text5" : {
+		"ru" : "Управляющий партнер компании AEQ",
+		"en" : "AEQ Managing Partner"
+	},
+	"team-subtitle6" : {
+		"ru" : "Виктор<br>Самойлов",
+		"en" : "Victor<br>Samoilov"
+	},
+	"team-text6" : {
+		"ru" : "Управляющий партнер компании AEQ",
+		"en" : "AEQ Managing Partner"
+	},
+	"contacts-title" : {
+		"ru" : "контакты",
+		"en" : "contacts"
+	},
+	"contacts-text" : {
+		"ru" : "123111, Москва, Оружейная наб., 6с2",
+		"en" : "123111, Moskva, Oruzheynaya emb., 6c2"
+	}
+}
