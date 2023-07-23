@@ -73,7 +73,7 @@ function styles() {
 }
 
 function scripts() {
-	return src(['app/js/wow.js','app/js/index.js'])
+	return src(['app/js/wow.js','app/js/index.js','app/js/translate.js'])
 		.pipe(concat('index.min.js'))
 		.pipe(uglify())
 		.pipe(dest('app/js'))
