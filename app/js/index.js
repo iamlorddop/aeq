@@ -48,3 +48,89 @@ const swiperTeam = new Swiper('.swiper-team', {
 if (document.documentElement.clientWidth <= 640) {
 	document.querySelector('.btn-services-js').innerHTML = 'Связаться с нами'
 }
+
+// Event listeners
+const aboutLinks = document.querySelectorAll('.about-link-js')
+const advantagesLinks = document.querySelectorAll('.advantages-link-js')
+const servicesLinks = document.querySelectorAll('.services-link-js')
+const partnersLinks = document.querySelectorAll('.partners-link-js')
+const teamLinks = document.querySelectorAll('.team-link-js')
+const contactsLinks = document.querySelectorAll('.contacts-link-js')
+const readMore = document.querySelector('.read-more-js')
+const contactUsButton = document.querySelector('.btn-services-js')
+const modalForm = document.querySelector('.modal-form')
+const modalBackground = document.querySelector('.modal-background')
+const modalFormCross = document.querySelector('.modal-form-cross-js')
+const burgerMenuButton = document.querySelector('.burger-menu-button')
+
+aboutLinks.forEach(link => {
+	link.addEventListener('click', () => {
+		document.querySelector('.about').scrollIntoView({behavior: 'smooth'})
+	})
+})
+
+advantagesLinks.forEach(link => {
+	link.addEventListener('click', () => {
+		document.querySelector('.advantages').scrollIntoView({behavior: 'smooth'})
+	})
+})
+
+servicesLinks.forEach(link => {
+	link.addEventListener('click', () => {
+		document.querySelector('.services').scrollIntoView({behavior: 'smooth'})
+	})
+})
+
+partnersLinks.forEach(link => {
+	link.addEventListener('click', () => {
+		document.querySelector('.partners').scrollIntoView({behavior: 'smooth'})
+	})
+})
+
+teamLinks.forEach(link => {
+	link.addEventListener('click', () => {
+		document.querySelector('.team').scrollIntoView({behavior: 'smooth'})
+	})
+})
+
+contactsLinks.forEach(link => {
+	link.addEventListener('click', () => {
+		document.querySelector('.contacts').scrollIntoView({behavior: 'smooth'})
+	})
+})
+
+readMore.addEventListener('click', () => {
+	document.querySelector('.advantages').scrollIntoView({behavior: 'smooth'})
+})
+
+contactUsButton.addEventListener('click', () => {
+	modalFormCross.classList.remove('close')
+	modalBackground.classList.remove('close')
+	modalForm.classList.remove('close')
+	modalBackground.classList.add('active')
+	modalForm.classList.add('active')
+})
+
+modalFormCross.addEventListener('click', () => {
+	modalFormCross.classList.add('close')
+	setTimeout(() => {
+      modalBackground.classList.add('close')
+		modalForm.classList.add('close')
+   }, 250)
+	setTimeout(() => {
+		modalBackground.classList.remove('active')
+		modalForm.classList.remove('active')
+	}, 400)
+})
+
+modalBackground.addEventListener('click', () => {
+	modalFormCross.classList.add('close')
+	setTimeout(() => {
+      modalBackground.classList.add('close')
+		modalForm.classList.add('close')
+   }, 250)
+	setTimeout(() => {
+		modalBackground.classList.remove('active')
+		modalForm.classList.remove('active')
+	}, 400)
+})
