@@ -46,7 +46,8 @@ const swiperTeam = new Swiper('.swiper-team', {
 
 // Media queries
 if (document.documentElement.clientWidth <= 640) {
-	document.querySelector('.btn-services-js').innerHTML = 'Связаться с нами'
+	document.querySelector('.btn-services-js').classList.remove('lng-services-btn')
+	document.querySelector('.btn-services-js').classList.add('lng-services-btn-mobile')
 }
 
 // Event listeners
@@ -62,6 +63,8 @@ const modalForm = document.querySelector('.modal-form')
 const modalBackground = document.querySelector('.modal-background')
 const modalFormCross = document.querySelector('.modal-form-cross-js')
 const burgerMenuButton = document.querySelector('.burger-menu-button')
+const burgerMenu = document.querySelector('.burger-menu')
+const burgerMenuCross = document.querySelector('.burger-menu-cross-js')
 
 aboutLinks.forEach(link => {
 	link.addEventListener('click', () => {
@@ -101,6 +104,21 @@ contactsLinks.forEach(link => {
 
 readMore.addEventListener('click', () => {
 	document.querySelector('.advantages').scrollIntoView({behavior: 'smooth'})
+})
+
+burgerMenuButton.addEventListener('click', () => {
+	burgerMenuCross.classList.remove('close')
+	burgerMenu.classList.add('active')
+})
+
+burgerMenuCross.addEventListener('click', () => {
+	burgerMenuCross.classList.add('close')
+	setTimeout(() => {
+		burgerMenuCross.classList.add('close')
+   }, 250)
+	setTimeout(() => {
+		burgerMenuCross.classList.remove('active')
+	}, 400)
 })
 
 contactUsButton.addEventListener('click', () => {
