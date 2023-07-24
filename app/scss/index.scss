@@ -382,6 +382,10 @@ body {
 	}
 }
 
+.burger-menu.active {
+	display: flex;
+}
+
 .burger-top {
 	display: flex;
 	justify-content: space-between;
