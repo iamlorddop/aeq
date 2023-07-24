@@ -1,4 +1,4 @@
-{
+const langArr = {
 	"nav-about" : {
 		"ru" : "о нас",
 		"en" : "about"
@@ -23,37 +23,65 @@
 		"ru" : "контакты",
 		"en" : "contacts"
 	},
+	"burger-nav-about" : {
+		"ru" : "о нас",
+		"en" : "about"
+	},
+	"burger-nav-advantages" : {
+		"ru" : "Преимущества",
+		"en" : "advantages"
+	},
+	"burger-nav-services" : {
+		"ru" : "услуги",
+		"en" : "services"
+	},
+	"burger-nav-partners" : {
+		"ru" : "партнеры",
+		"en" : "partners"
+	},
+	"burger-nav-team" : {
+		"ru" : "команда",
+		"en" : "team"
+	},
+	"burger-nav-contacts" : {
+		"ru" : "контакты",
+		"en" : "contacts"
+	},
 	"about-title" : {
 		"ru" : "Консалтинговая компания AEQ",
 		"en" : "Consulting company AEQ"
 	},
 	"about-text1" : {
-		"ru" : "Помогаем инвестиционным фондам, бизнесу и частным лицам сохранять и приумножать активы.",
-		"en" : "We help investment funds, businesses and individuals to save and increase assets."
+		"ru" : "Помогаем инвестиционным фондам,<br>бизнесу и частным лицам сохранять<br>и приумножать активы.",
+		"en" : "We help investment funds,<br>businesses and individuals to save<br>and increase assets."
 	},
 	"about-text2" : {
-		"ru" : "Наш международный опыт и многолетняя экспертиза в управлении активами, консалтинге, юриспруденции и финансах помогут трансформировать ваш бизнес своевременно и комфортно. Мы гордимся репутацией честного, компетентного и стабильного партнёра.",
-		"en" : "Our international experience and many years of expertise in asset management, consulting, law and finance will help you transform your business in a timely and comfortable way. We are proud of our reputation as an honest, competent and stable partner."
+		"ru" : "Наш международный опыт и многолетняя экспертиза в управлении<br>активами, консалтинге, юриспруденции и финансах помогут<br>трансформировать ваш бизнес своевременно и комфортно. Мы гордимся<br>репутацией честного, компетентного и стабильного партнёра.",
+		"en" : "Our international experience and many years of expertise in asset<br> management, consulting, law and finance will help you<br>transform your business in a timely and comfortable way. We are proud of our<br>reputation as an honest, competent and stable partner."
 	},
 	"about-read-more" : {
 		"ru" : "Подробнее",
-		"en" : "Read more"
+		"en" : "More"
 	},
 	"advantages-title" : {
 		"ru" : "Преимущества",
 		"en" : "Advantages"
 	},
 	"advantages-text1" : {
-		"ru" : "Простое и актуальное решение задач",
-		"en" : "Simple and up-to-date solution"
+		"ru" : "Простое и актуальное<br>решение задач",
+		"en" : "Simple and up-to-date<br>solution"
 	},
 	"advantages-text2" : {
-		"ru" : "Конфиденциальность и индивидуальный подход",
-		"en" : "Privacy and individuality"
+		"ru" : "Конфиденциальность<br>и индивидуальный подход",
+		"en" : "Privacy<br>and individuality"
 	},
 	"advantages-text3" : {
-		"ru" : "Международная экспертиза и высокие стандарты",
-		"en" : "International expertise and high standards"
+		"ru" : "Международная экспертиза<br>и высокие стандарты",
+		"en" : "International expertise<br>and high standards"
+	},
+	"services-title" : {
+		"ru" : "услуги",
+		"en" : "services"
 	},
 	"services-subtitle" : {
 		"ru" : "Решение сложных задач.<br><span>Просто.</span>",
@@ -123,6 +151,10 @@
 		"ru" : "Связаться",
 		"en" : "Contact"
 	},
+	"services-btn-mobile" : {
+		"ru" : "Связаться с нами",
+		"en" : "Contact us"
+	},
 	"partners-title" : {
 		"ru" : "партнеры",
 		"en" : "partners"
@@ -179,6 +211,54 @@
 		"ru" : "Управляющий партнер компании AEQ",
 		"en" : "AEQ Managing Partner"
 	},
+	"team-subtitle7" : {
+		"ru" : "Виктор<br>Самойлов",
+		"en" : "Victor<br>Samoilov"
+	},
+	"team-text7" : {
+		"ru" : "Управляющий партнер компании AEQ",
+		"en" : "AEQ Managing Partner"
+	},
+	"team-subtitle8" : {
+		"ru" : "Виктор<br>Самойлов",
+		"en" : "Victor<br>Samoilov"
+	},
+	"team-text8" : {
+		"ru" : "Управляющий партнер компании AEQ",
+		"en" : "AEQ Managing Partner"
+	},
+	"team-subtitle9" : {
+		"ru" : "Виктор<br>Самойлов",
+		"en" : "Victor<br>Samoilov"
+	},
+	"team-text9" : {
+		"ru" : "Управляющий партнер компании AEQ",
+		"en" : "AEQ Managing Partner"
+	},
+	"team-subtitle10" : {
+		"ru" : "Виктор<br>Самойлов",
+		"en" : "Victor<br>Samoilov"
+	},
+	"team-text10" : {
+		"ru" : "Управляющий партнер компании AEQ",
+		"en" : "AEQ Managing Partner"
+	},
+	"team-subtitle11" : {
+		"ru" : "Виктор<br>Самойлов",
+		"en" : "Victor<br>Samoilov"
+	},
+	"team-text11" : {
+		"ru" : "Управляющий партнер компании AEQ",
+		"en" : "AEQ Managing Partner"
+	},
+	"team-subtitle12" : {
+		"ru" : "Виктор<br>Самойлов",
+		"en" : "Victor<br>Samoilov"
+	},
+	"team-text12" : {
+		"ru" : "Управляющий партнер компании AEQ",
+		"en" : "AEQ Managing Partner"
+	},
 	"contacts-title" : {
 		"ru" : "контакты",
 		"en" : "contacts"
@@ -186,5 +266,29 @@
 	"contacts-text" : {
 		"ru" : "123111, Москва, Оружейная наб., 6с2",
 		"en" : "123111, Moskva, Oruzheynaya emb., 6c2"
+	},
+	"footer-nav-about" : {
+		"ru" : "о нас",
+		"en" : "about"
+	},
+	"footer-nav-advantages" : {
+		"ru" : "Преимущества",
+		"en" : "advantages"
+	},
+	"footer-nav-services" : {
+		"ru" : "услуги",
+		"en" : "services"
+	},
+	"footer-nav-partners" : {
+		"ru" : "партнеры",
+		"en" : "partners"
+	},
+	"footer-nav-team" : {
+		"ru" : "команда",
+		"en" : "team"
+	},
+	"footer-nav-contacts" : {
+		"ru" : "контакты",
+		"en" : "contacts"
 	}
 }
