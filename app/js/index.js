@@ -107,6 +107,7 @@ readMore.addEventListener('click', () => {
 })
 
 burgerMenuButton.addEventListener('click', () => {
+	burgerMenu.classList.remove('close')
 	burgerMenuCross.classList.remove('close')
 	burgerMenu.classList.add('active')
 })
@@ -118,6 +119,7 @@ burgerMenuCross.addEventListener('click', () => {
    }, 250)
 	setTimeout(() => {
 		burgerMenuCross.classList.remove('active')
+		burgerMenu.classList.add('close')
 	}, 400)
 })
 
