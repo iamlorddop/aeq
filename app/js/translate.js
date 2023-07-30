@@ -1,12 +1,32 @@
-const langChangeButton = document.querySelectorAll('.change-lang')
+const langChangeButtons = document.querySelectorAll('.change-lang')
+const ruLangButtons = document.querySelectorAll('.ru')
+const enLangButtons = document.querySelectorAll('.en')
 const allLang = ['ru', 'en']
 
-langChangeButton.forEach(button => {
+ruLangButtons.forEach(button => {
+	let hash = window.location.hash
+	hash = hash.substring(1)
+	if (hash == 'ru') {
+			button.classList.add('active')
+	}
+})
+
+enLangButtons.forEach(button => {
+	let hash = window.location.hash
+	hash = hash.substring(1)
+	if (hash == 'en') {
+			button.classList.add('active')
+	}
+})
+
+langChangeButtons.forEach(button => {
 	button.addEventListener('click', () => {
 		let langButton = button
 		if (langButton.classList.contains('ru')) {
+			langButton.classList.add('active')
 			changeURLLanguage('ru')
 		} else {
+			langButton.classList.add('active')
 			changeURLLanguage('en')
 		}
 	})
