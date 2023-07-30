@@ -290,5 +290,37 @@ const langArr = {
 	"footer-nav-contacts" : {
 		"ru" : "контакты",
 		"en" : "contacts"
+	},
+	"modal-form-title" : {
+		"ru" : "Заказать <span>консультацию</span>",
+		"en" : "Order <span>a consultation</span>"
+	},
+	"modal-form-text1" : {
+		"ru" : "Ваше имя*",
+		"en" : "Your name*"
+	},
+	"modal-form-text2" : {
+		"ru" : "Ваш e-mail*",
+		"en" : "Your e-mail*"
+	},
+	"modal-form-text3" : {
+		"ru" : "Ваш телефон",
+		"en" : "Your phone"
+	},
+	"modal-form-text4" : {
+		"ru" : "Ваш вопрос",
+		"en" : "Your question"
+	},
+	"modal-form-text5" : {
+		"ru" : "Я согласен на сбор персональных данных",
+		"en" : "I agree to the collection of personal data"
+	},
+	"modal-form-text6" : {
+		"ru" : "* - поля, обязательные к заполнению",
+		"en" : "* - required fields"
+	},
+	"modal-form-text7" : {
+		"ru" : "Заказать",
+		"en" : "Order"
 	}
 }
