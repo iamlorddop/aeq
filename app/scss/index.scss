@@ -937,6 +937,10 @@ section {
 }
 
 @media (max-width: 780px) {
+	.rounded {
+		display: none;
+	}
+	
 	.header {
 		justify-content: space-between;
 	}

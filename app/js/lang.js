@@ -164,96 +164,96 @@ const langArr = {
 		"en" : "team"
 	},
 	"team-subtitle1" : {
-		"ru" : "Виктор<br>Самойлов",
-		"en" : "Victor<br>Samoilov"
+		"ru" : "Владислав<br>Смоенко",
+		"en" : "Vladislav<br>Smoenko"
 	},
 	"team-text1" : {
 		"ru" : "Управляющий партнер компании AEQ",
 		"en" : "AEQ Managing Partner"
 	},
 	"team-subtitle2" : {
-		"ru" : "Виктор<br>Самойлов",
-		"en" : "Victor<br>Samoilov"
+		"ru" : "Алена<br>Бросова",
+		"en" : "Alena<br>Brosova"
 	},
 	"team-text2" : {
 		"ru" : "Управляющий партнер компании AEQ",
 		"en" : "AEQ Managing Partner"
 	},
 	"team-subtitle3" : {
-		"ru" : "Виктор<br>Самойлов",
-		"en" : "Victor<br>Samoilov"
+		"ru" : "Александра<br>Крюкова",
+		"en" : "Alexandra<br>Krukova"
 	},
 	"team-text3" : {
 		"ru" : "Управляющий партнер компании AEQ",
 		"en" : "AEQ Managing Partner"
 	},
 	"team-subtitle4" : {
-		"ru" : "Виктор<br>Самойлов",
-		"en" : "Victor<br>Samoilov"
+		"ru" : "Максим<br>Варешюк",
+		"en" : "Maxim<br>Vareshuk"
 	},
 	"team-text4" : {
 		"ru" : "Управляющий партнер компании AEQ",
 		"en" : "AEQ Managing Partner"
 	},
 	"team-subtitle5" : {
-		"ru" : "Виктор<br>Самойлов",
-		"en" : "Victor<br>Samoilov"
+		"ru" : "Артем<br>Гавришин",
+		"en" : "Artem<br>Gavrishin"
 	},
 	"team-text5" : {
 		"ru" : "Управляющий партнер компании AEQ",
 		"en" : "AEQ Managing Partner"
 	},
 	"team-subtitle6" : {
-		"ru" : "Виктор<br>Самойлов",
-		"en" : "Victor<br>Samoilov"
+		"ru" : "Оксана<br>Травинская",
+		"en" : "Oksana<br>Travinskaya"
 	},
 	"team-text6" : {
 		"ru" : "Управляющий партнер компании AEQ",
 		"en" : "AEQ Managing Partner"
 	},
 	"team-subtitle7" : {
-		"ru" : "Виктор<br>Самойлов",
-		"en" : "Victor<br>Samoilov"
+		"ru" : "Владислав<br>Смоенко",
+		"en" : "Vladislav<br>Smoenko"
 	},
 	"team-text7" : {
 		"ru" : "Управляющий партнер компании AEQ",
 		"en" : "AEQ Managing Partner"
 	},
 	"team-subtitle8" : {
-		"ru" : "Виктор<br>Самойлов",
-		"en" : "Victor<br>Samoilov"
+		"ru" : "Алена<br>Бросова",
+		"en" : "Alena<br>Brosova"
 	},
 	"team-text8" : {
 		"ru" : "Управляющий партнер компании AEQ",
 		"en" : "AEQ Managing Partner"
 	},
 	"team-subtitle9" : {
-		"ru" : "Виктор<br>Самойлов",
-		"en" : "Victor<br>Samoilov"
+		"ru" : "Александра<br>Крюкова",
+		"en" : "Alexandra<br>Krukova"
 	},
 	"team-text9" : {
 		"ru" : "Управляющий партнер компании AEQ",
 		"en" : "AEQ Managing Partner"
 	},
 	"team-subtitle10" : {
-		"ru" : "Виктор<br>Самойлов",
-		"en" : "Victor<br>Samoilov"
+		"ru" : "Максим<br>Варешюк",
+		"en" : "Maxim<br>Vareshuk"
 	},
 	"team-text10" : {
 		"ru" : "Управляющий партнер компании AEQ",
 		"en" : "AEQ Managing Partner"
 	},
 	"team-subtitle11" : {
-		"ru" : "Виктор<br>Самойлов",
-		"en" : "Victor<br>Samoilov"
+		"ru" : "Артем<br>Гавришин",
+		"en" : "Artem<br>Gavrishin"
 	},
 	"team-text11" : {
 		"ru" : "Управляющий партнер компании AEQ",
 		"en" : "AEQ Managing Partner"
 	},
 	"team-subtitle12" : {
-		"ru" : "Виктор<br>Самойлов",
-		"en" : "Victor<br>Samoilov"
+		"ru" : "Оксана<br>Травинская",
+		"en" : "Oksana<br>Travinskaya"
 	},
 	"team-text12" : {
 		"ru" : "Управляющий партнер компании AEQ",
