@@ -322,5 +322,77 @@ const langArr = {
 	"modal-form-text7" : {
 		"ru" : "Заказать",
 		"en" : "Order"
+	},
+	"modal-team-title1" : {
+		"ru" : "Владислав<br>Смоенко",
+		"en" : "Vladislav<br>Smoenko"
+	},
+	"modal-team-description1" : {
+		"ru" : "Управляющий партнер компании AEQ",
+		"en" : "AEQ Managing Partner"
+	},
+	"modal-team-text1" : {
+		"ru" : "Управляющий партнер компании AEQ. Энергичный и глобально мыслящий анти-кризисный руководитель с опытом комплексной работы в консалтинге, крупном частном инвестиционном фонде и собственных проектах. Специализируется на сложных проектах, требующих анти-кризисного управления, а также на крупных M&A сделках в России и за рубежом.<br><br>Виктор имеет профильное юридическое образование, полученное в РУДН (бакалавр права) и МГЮА им. Кутафина (магистр права). В 2023 году Виктор также получил диплом Московской школы управления Сколково в рамках программы для менеджеров высшего звена Skolkovo Executive MBA for Eurasia.<br><br>Свободно говорит на английском языке. Увлекается катанием на вейкборде, тайским боксом, силовыми видами спорта и путешествиями.",
+		"en" : "Managing Partner of AEQ. An energetic and globally minded anti-crisis leader with experience in complex work in consulting, a large private investment fund and his own projects. He specializes in complex projects that require anti-crisis management, as well as large M&A transactions in Russia and abroad. Kutafin (Master of Laws). In 2023, Viktor also received a diploma from the Moscow School of Management Skolkovo as part of the Skolkovo Executive MBA for Eurasia program for senior managers.<br><br>Speaks fluent English. His hobbies are wakeboarding, Thai boxing, power sports and traveling."
+	},
+	"modal-team-title2" : {
+		"ru" : "Алена<br>Бросова",
+		"en" : "Alena<br>Brosova"
+	},
+	"modal-team-description2" : {
+		"ru" : "Управляющий партнер компании AEQ",
+		"en" : "AEQ Managing Partner"
+	},
+	"modal-team-text2" : {
+		"ru" : "Управляющий партнер компании AEQ. Энергичный и глобально мыслящий анти-кризисный руководитель с опытом комплексной работы в консалтинге, крупном частном инвестиционном фонде и собственных проектах. Специализируется на сложных проектах, требующих анти-кризисного управления, а также на крупных M&A сделках в России и за рубежом.<br><br>Виктор имеет профильное юридическое образование, полученное в РУДН (бакалавр права) и МГЮА им. Кутафина (магистр права). В 2023 году Виктор также получил диплом Московской школы управления Сколково в рамках программы для менеджеров высшего звена Skolkovo Executive MBA for Eurasia.<br><br>Свободно говорит на английском языке. Увлекается катанием на вейкборде, тайским боксом, силовыми видами спорта и путешествиями.",
+		"en" : "Managing Partner of AEQ. An energetic and globally minded anti-crisis leader with experience in complex work in consulting, a large private investment fund and his own projects. He specializes in complex projects that require anti-crisis management, as well as large M&A transactions in Russia and abroad. Kutafin (Master of Laws). In 2023, Viktor also received a diploma from the Moscow School of Management Skolkovo as part of the Skolkovo Executive MBA for Eurasia program for senior managers.<br><br>Speaks fluent English. His hobbies are wakeboarding, Thai boxing, power sports and traveling."
+	},
+	"modal-team-title3" : {
+		"ru" : "Александра<br>Крюкова",
+		"en" : "Alexandra<br>Krukova"
+	},
+	"modal-team-description3" : {
+		"ru" : "Управляющий партнер компании AEQ",
+		"en" : "AEQ Managing Partner"
+	},
+	"modal-team-text3" : {
+		"ru" : "Управляющий партнер компании AEQ. Энергичный и глобально мыслящий анти-кризисный руководитель с опытом комплексной работы в консалтинге, крупном частном инвестиционном фонде и собственных проектах. Специализируется на сложных проектах, требующих анти-кризисного управления, а также на крупных M&A сделках в России и за рубежом.<br><br>Виктор имеет профильное юридическое образование, полученное в РУДН (бакалавр права) и МГЮА им. Кутафина (магистр права). В 2023 году Виктор также получил диплом Московской школы управления Сколково в рамках программы для менеджеров высшего звена Skolkovo Executive MBA for Eurasia.<br><br>Свободно говорит на английском языке. Увлекается катанием на вейкборде, тайским боксом, силовыми видами спорта и путешествиями.",
+		"en" : "Managing Partner of AEQ. An energetic and globally minded anti-crisis leader with experience in complex work in consulting, a large private investment fund and his own projects. He specializes in complex projects that require anti-crisis management, as well as large M&A transactions in Russia and abroad. Kutafin (Master of Laws). In 2023, Viktor also received a diploma from the Moscow School of Management Skolkovo as part of the Skolkovo Executive MBA for Eurasia program for senior managers.<br><br>Speaks fluent English. His hobbies are wakeboarding, Thai boxing, power sports and traveling."
+	},
+	"team-title4" : {
+		"ru" : "Максим<br>Варешюк",
+		"en" : "Maxim<br>Vareshuk"
+	},
+	"modal-team-description4" : {
+		"ru" : "Управляющий партнер компании AEQ",
+		"en" : "AEQ Managing Partner"
+	},
+	"modal-team-text4" : {
+		"ru" : "Управляющий партнер компании AEQ. Энергичный и глобально мыслящий анти-кризисный руководитель с опытом комплексной работы в консалтинге, крупном частном инвестиционном фонде и собственных проектах. Специализируется на сложных проектах, требующих анти-кризисного управления, а также на крупных M&A сделках в России и за рубежом.<br><br>Виктор имеет профильное юридическое образование, полученное в РУДН (бакалавр права) и МГЮА им. Кутафина (магистр права). В 2023 году Виктор также получил диплом Московской школы управления Сколково в рамках программы для менеджеров высшего звена Skolkovo Executive MBA for Eurasia.<br><br>Свободно говорит на английском языке. Увлекается катанием на вейкборде, тайским боксом, силовыми видами спорта и путешествиями.",
+		"en" : "Managing Partner of AEQ. An energetic and globally minded anti-crisis leader with experience in complex work in consulting, a large private investment fund and his own projects. He specializes in complex projects that require anti-crisis management, as well as large M&A transactions in Russia and abroad. Kutafin (Master of Laws). In 2023, Viktor also received a diploma from the Moscow School of Management Skolkovo as part of the Skolkovo Executive MBA for Eurasia program for senior managers.<br><br>Speaks fluent English. His hobbies are wakeboarding, Thai boxing, power sports and traveling."
+	},
+	"modal-team-title5" : {
+		"ru" : "Артем<br>Гавришин",
+		"en" : "Artem<br>Gavrishin"
+	},
+	"modal-modal-team-description5" : {
+		"ru" : "Управляющий партнер компании AEQ",
+		"en" : "AEQ Managing Partner"
+	},
+	"modal-team-text5" : {
+		"ru" : "Управляющий партнер компании AEQ. Энергичный и глобально мыслящий анти-кризисный руководитель с опытом комплексной работы в консалтинге, крупном частном инвестиционном фонде и собственных проектах. Специализируется на сложных проектах, требующих анти-кризисного управления, а также на крупных M&A сделках в России и за рубежом.<br><br>Виктор имеет профильное юридическое образование, полученное в РУДН (бакалавр права) и МГЮА им. Кутафина (магистр права). В 2023 году Виктор также получил диплом Московской школы управления Сколково в рамках программы для менеджеров высшего звена Skolkovo Executive MBA for Eurasia.<br><br>Свободно говорит на английском языке. Увлекается катанием на вейкборде, тайским боксом, силовыми видами спорта и путешествиями.",
+		"en" : "Managing Partner of AEQ. An energetic and globally minded anti-crisis leader with experience in complex work in consulting, a large private investment fund and his own projects. He specializes in complex projects that require anti-crisis management, as well as large M&A transactions in Russia and abroad. Kutafin (Master of Laws). In 2023, Viktor also received a diploma from the Moscow School of Management Skolkovo as part of the Skolkovo Executive MBA for Eurasia program for senior managers.<br><br>Speaks fluent English. His hobbies are wakeboarding, Thai boxing, power sports and traveling."
+	},
+	"modal-team-title6" : {
+		"ru" : "Оксана<br>Травинская",
+		"en" : "Oksana<br>Travinskaya"
+	},
+	"modal-modal-team-description6" : {
+		"ru" : "Управляющий партнер компании AEQ",
+		"en" : "AEQ Managing Partner"
+	},
+	"modal-team-text6" : {
+		"ru" : "Управляющий партнер компании AEQ. Энергичный и глобально мыслящий анти-кризисный руководитель с опытом комплексной работы в консалтинге, крупном частном инвестиционном фонде и собственных проектах. Специализируется на сложных проектах, требующих анти-кризисного управления, а также на крупных M&A сделках в России и за рубежом.<br><br>Виктор имеет профильное юридическое образование, полученное в РУДН (бакалавр права) и МГЮА им. Кутафина (магистр права). В 2023 году Виктор также получил диплом Московской школы управления Сколково в рамках программы для менеджеров высшего звена Skolkovo Executive MBA for Eurasia.<br><br>Свободно говорит на английском языке. Увлекается катанием на вейкборде, тайским боксом, силовыми видами спорта и путешествиями.",
+		"en" : "Managing Partner of AEQ. An energetic and globally minded anti-crisis leader with experience in complex work in consulting, a large private investment fund and his own projects. He specializes in complex projects that require anti-crisis management, as well as large M&A transactions in Russia and abroad. Kutafin (Master of Laws). In 2023, Viktor also received a diploma from the Moscow School of Management Skolkovo as part of the Skolkovo Executive MBA for Eurasia program for senior managers.<br><br>Speaks fluent English. His hobbies are wakeboarding, Thai boxing, power sports and traveling."
 	}
 }
