@@ -7,4 +7,7 @@ const updateCursorPosition = (event) => {
 
 window.addEventListener('mousemove', event => {
 	updateCursorPosition(event)
-})
+	if (event.target.style.cursor == 'pointer') {
+		cursorRounded.classList.add('zoom')
+	}
+}) 
