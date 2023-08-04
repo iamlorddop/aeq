@@ -113,7 +113,7 @@ burgerMenuButton.addEventListener('click', () => {
 	burgerMenu.classList.add('active')
 })
 
-burgerMenuCross.addEventListener('click', () => {
+function burgerMenuClose() {
 	burgerMenuCross.classList.add('close')
 	setTimeout(() => {
 		burgerMenuCross.classList.add('close')
@@ -122,6 +122,34 @@ burgerMenuCross.addEventListener('click', () => {
 		burgerMenuCross.classList.remove('active')
 		burgerMenu.classList.add('close')
 	}, 400)
+}
+
+burgerMenuCross.addEventListener('click', () => {
+	burgerMenuClose()
+})
+
+document.querySelector('.about-burger-js').addEventListener('click', () => {
+	burgerMenuClose()
+})
+
+document.querySelector('.advantages-burger-js').addEventListener('click', () => {
+	burgerMenuClose()
+})
+
+document.querySelector('.services-burger-js').addEventListener('click', () => {
+	burgerMenuClose()
+})
+
+document.querySelector('.partners-burger-js').addEventListener('click', () => {
+	burgerMenuClose()
+})
+
+document.querySelector('.team-burger-js').addEventListener('click', () => {
+	burgerMenuClose()
+})
+
+document.querySelector('.contacts-burger-js').addEventListener('click', () => {
+	burgerMenuClose()
 })
 
 contactUsButton.addEventListener('click', () => {
@@ -156,7 +184,6 @@ modalBackground.addEventListener('click', () => {
 		modalBackground.classList.remove('active')
 		modalForm.classList.remove('active')
 		modalTeam.classList.remove('active')
-
 	}, 400)
 })
 
