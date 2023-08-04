@@ -65,6 +65,7 @@ const modalFormCross = document.querySelector('.modal-form-cross-js')
 const burgerMenuButton = document.querySelector('.burger-menu-button')
 const burgerMenu = document.querySelector('.burger-menu')
 const burgerMenuCross = document.querySelector('.burger-menu-cross-js')
+const modalTeamCross = document.querySelector('.modal-team-cross-js')
 
 aboutLinks.forEach(link => {
 	link.addEventListener('click', () => {
@@ -145,12 +146,28 @@ modalFormCross.addEventListener('click', () => {
 
 modalBackground.addEventListener('click', () => {
 	modalFormCross.classList.add('close')
+	modalTeamCross.classList.add('close')
 	setTimeout(() => {
       modalBackground.classList.add('close')
 		modalForm.classList.add('close')
+		modalTeam.classList.add('close')
    }, 250)
 	setTimeout(() => {
 		modalBackground.classList.remove('active')
 		modalForm.classList.remove('active')
+		modalTeam.classList.remove('active')
+
+	}, 400)
+})
+
+modalTeamCross.addEventListener('click', () => {
+	modalTeamCross.classList.add('close')
+	setTimeout(() => {
+      modalBackground.classList.add('close')
+		modalTeam.classList.add('close')
+   }, 250)
+	setTimeout(() => {
+		modalBackground.classList.remove('active')
+		modalTeam.classList.remove('active')
 	}, 400)
 })
