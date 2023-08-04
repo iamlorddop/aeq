@@ -126,6 +126,16 @@ body {
 	}
 }
 
+%modal-styles {
+	position: fixed;
+	left: 50%;
+	padding: 56px;
+	display: none;
+	background: var(--white-color);
+	border-radius: 15px;
+	z-index: 999;
+}
+
 // cursor
 .rounded {
 	position: fixed;
@@ -137,7 +147,7 @@ body {
 	pointer-events: none;
 	border-radius: 50%;
 	transition: transform .5s ease-in;
-	z-index: 1000;
+	z-index: 2000;
 	&::after {
 		content: "";
 		position: absolute;
@@ -221,15 +231,9 @@ body {
 }
 
 .modal-form {
-	position: fixed;
+	@extend %modal-styles;
 	top: 1%;
-	left: 50%;
-	padding: 56px;
-	display: none;
 	min-width: 320px;
-	background: var(--white-color);
-	border-radius: 15px;
-	z-index: 999;
 	.title {
 		margin-bottom: 50px;
 		display: flex;
@@ -350,6 +354,62 @@ body {
 	margin-top: 40px;
 }
 
+.modal-team.active {
+	display: flex;
+	animation: modalactive .4s ease-in-out forwards;
+}
+
+.modal-team.close {
+	animation: modalclose .4s ease-in-out forwards;
+}
+
+// modal team
+.modal-team {
+	@extend %modal-styles;
+	top: 15%;
+	gap: 50px;
+}
+
+.modal-team-flex {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	.title {
+		font-size: 32px;
+		color: inherit;
+		text-transform: none;
+	}
+	.description {
+		font-size: 14px;
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+}
+
+.modal-team-flex__item {
+	display: flex;
+	justify-content: space-between;
+}
+
+.modal-team-body-text {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	.text {
+		font-size: 22px;
+		font-weight: 500;
+	}
+}
+
+.modal-team__image {
+	width: 46.875vw;
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%;
+	border-radius: 15px;
+}
+
 // content, header, main, footer, burger-menu
 .wrapper {
 	display: flex;
@@ -387,12 +447,17 @@ body {
 		.nav-list__item.active button {
 			color: var(--blue-color);
 			text-shadow: 0.4px 0 0 var(--blue-color);
+			text-decoration: none !important;
+		}
+		&:hover {
+			text-decoration: underline;
 		}
 	}
 	.nav-list__item.active a,
 	.nav-list__item.active button {
 		color: var(--blue-color);
 		text-shadow: 0.4px 0 0 var(--blue-color);
+		text-decoration: none;
 	}
 }
 
@@ -568,14 +633,18 @@ body {
 	.nav-list__item a,
 	.nav-list__item button {
 		transition: text-shadow .2s ease-in;
-	}
-	.nav-list__item a:active,
-	.nav-list__item button:active {
-		text-shadow: 0.4px 0 0 var(--white-color);
+		&:active {
+			text-shadow: 0.4px 0 0 var(--white-color);
+			text-decoration: none !important;
+		}
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 	.nav-list__item.active a,
 	.nav-list__item.active button {
 		text-shadow: 0.4px 0 0 var(--white-color);
+		text-decoration: none;
 	}
 	.footer-lang-button__container {
 		button {
@@ -840,8 +909,10 @@ section {
 }
 
 .team-flex__item {
+	position: relative;
 	padding-bottom: 16px;
 	background: var(--white-color);
+	border-radius: 15px;
 	transition: transform .3s ease-in-out;
 	cursor: pointer;
 	.subtitle {
@@ -854,6 +925,9 @@ section {
 	}
 	&:hover {
 		transform: scale(1.05);
+	}
+	img {
+		max-width: 394px;
 	}
 }
 
