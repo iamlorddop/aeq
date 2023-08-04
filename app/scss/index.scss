@@ -981,6 +981,30 @@ section {
 		flex-wrap: wrap;
 		gap: 35px;
 	}
+
+	.modal-team {
+		padding: 30px 20px;
+		flex-wrap: wrap;
+		gap: 22px;
+		.cross {
+			position: absolute;
+			top: 4%;
+			right: 6%;
+			span {
+				width: 3px;
+				background: var(--white-color);
+				&::before {
+					width: 3px;
+					background: var(--white-color);
+				}
+			}
+		}
+	}
+
+	.modal-team__image {
+		min-height: 204px;
+		background-position: 50% 15%;
+	}	
 }
 
 @media (max-width: 1090px) {
@@ -1064,6 +1088,13 @@ section {
 			bottom: 0;
 		}
 	}
+
+	.modal-team {
+		.cross {
+			top: 3%;
+			right: 10%;
+		}
+	}
 }
 
 @media (max-width: 640px) {
@@ -1091,6 +1122,30 @@ section {
 
 	.modal-form-flex {
 		gap: 0;
+	}
+
+	.modal-team {
+		position: absolute;
+		top: 420%;
+		.cross {
+			top: 5%;
+			right: 10%;
+		}
+	}
+
+	.modal-team-flex {
+		.title {
+			font-size: 20px;
+		}
+		.description {
+			font-size: 10px;
+		}
+	}
+
+	.modal-team-body-text {
+		.text {
+			font-size: 14px;
+		}
 	}
 
 	.form-checkbox {
@@ -1311,10 +1366,26 @@ section {
 	}
 }
 
+@media (max-width: 490px) {
+	.modal-team {
+		.cross {
+			top: 4%;
+			right: 14%;
+		}
+	}
+}
+
 @media (max-width: 375px) {
 	.modal-form {
 		position: absolute;
 		top: 435%;
+	}
+	
+	.modal-team {
+		.cross {
+			top: 3%;
+			right: 16%;
+		}
 	}
 }
 
