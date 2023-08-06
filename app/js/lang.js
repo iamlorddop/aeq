@@ -1,4 +1,4 @@
-const langArr = {
+const langObj = {
 	"nav-about" : {
 		"ru" : "о нас",
 		"en" : "about"
