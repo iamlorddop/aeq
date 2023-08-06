@@ -147,7 +147,7 @@ body {
 	mix-blend-mode: difference;
 	pointer-events: none;
 	border-radius: 50%;
-	transition: transform .4s cubic-bezier(.84,-0.08,.4,1.11);
+	transition: transform .3s ease;
 	z-index: 2000;
 	&::after {
 		content: "";
@@ -163,7 +163,7 @@ body {
 }
 
 .rounded.zoom {
-	transform: scale(1.5);
+	transform: scale(1.4);
 }
 
 // modal form
