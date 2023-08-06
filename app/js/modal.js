@@ -32,6 +32,17 @@ function openModalTeam() {
 	modalTeam.classList.add('active')
 }
 
+function changeLanguageInModalTeam() {
+	let hash = window.location.hash
+	hash = hash.substring(1)
+	for (let key in langObj) {
+		let elem = document.querySelector('.lng-' + key)
+		if (elem) {
+			elem.innerHTML = langObj[key][hash]
+		}
+	}
+}
+
 if (modalLinks.length > 0) {
 	for(let i = 0; i < modalLinks.length; i++) {
 		const modalLink = modalLinks[i]
@@ -46,6 +57,7 @@ if (modalLinks.length > 0) {
 					aboutTeamMember[memberName],
 					1
 				)
+				changeLanguageInModalTeam()
 				openModalTeam()
 			} else if (modalLink.dataset.name == 'Алена Бросова') {
 				changeTextInModalTeam(
@@ -55,6 +67,7 @@ if (modalLinks.length > 0) {
 					aboutTeamMember[memberName],
 					2
 				)
+				changeLanguageInModalTeam()
 				openModalTeam()
 			} else if (modalLink.dataset.name == 'Александра Крюкова') {
 				changeTextInModalTeam(
@@ -64,6 +77,7 @@ if (modalLinks.length > 0) {
 					aboutTeamMember[memberName],
 					3
 				)
+				changeLanguageInModalTeam()
 				openModalTeam()
 			} else if (modalLink.dataset.name == 'Максим Варешюк') {
 				changeTextInModalTeam(
@@ -73,6 +87,7 @@ if (modalLinks.length > 0) {
 					aboutTeamMember[memberName],
 					4
 				)
+				changeLanguageInModalTeam()
 				openModalTeam()
 			} else if (modalLink.dataset.name == 'Артем Гавришин') {
 				changeTextInModalTeam(
@@ -82,6 +97,7 @@ if (modalLinks.length > 0) {
 					aboutTeamMember[memberName],
 					5
 				)
+				changeLanguageInModalTeam()
 				openModalTeam()
 			} else if (modalLink.dataset.name == 'Оксана Травинская') {
 				changeTextInModalTeam(
@@ -91,6 +107,7 @@ if (modalLinks.length > 0) {
 					aboutTeamMember[memberName],
 					6
 				)
+				changeLanguageInModalTeam()
 				openModalTeam()
 			}
 		})
