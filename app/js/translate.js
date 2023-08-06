@@ -37,18 +37,24 @@ function changeURLLanguage(lang) {
 	location.reload()
 }
 
-function changeLanguage() {
+function defaultLanguage() {
 	let hash = window.location.hash
 	hash = hash.substring(1)
 	if (!allLang.includes(hash)) {
 		location.href = `${window.location.pathname}#ru`
 		location.reload()
 	}
-	document.querySelector('title').innerHTML = langArr['about-title'][hash]
-	for (let key in langArr) {
+	document.querySelector('title').innerHTML = langObj['about-title'][hash]
+}
+
+function changeLanguage() {
+	let hash = window.location.hash
+	hash = hash.substring(1)
+	defaultLanguage()
+	for (let key in langObj) {
 		let elem = document.querySelector('.lng-' + key)
 		if (elem) {
-			elem.innerHTML = langArr[key][hash]
+			elem.innerHTML = langObj[key][hash]
 		}
 	}
 }
