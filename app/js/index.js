@@ -103,16 +103,8 @@ contactsLinks.forEach(link => {
 	})
 })
 
-readMore.addEventListener('click', () => {
-	document.querySelector('.advantages').scrollIntoView({behavior: 'smooth'})
-})
 
-burgerMenuButton.addEventListener('click', () => {
-	burgerMenu.classList.remove('close')
-	burgerMenuCross.classList.remove('close')
-	burgerMenu.classList.add('active')
-})
-
+// Modal form and modal team
 function burgerMenuClose() {
 	burgerMenuCross.classList.add('close')
 	setTimeout(() => {
@@ -123,6 +115,60 @@ function burgerMenuClose() {
 		burgerMenu.classList.add('close')
 	}, 400)
 }
+
+function forModalCross(modal, cross) {
+	cross.classList.add('close')
+	setTimeout(() => {
+      modalBackground.classList.add('close')
+		modal.classList.add('close')
+   }, 250)
+	setTimeout(() => {
+		modalBackground.classList.remove('active')
+		modal.classList.remove('active')
+	}, 400)
+}
+
+readMore.addEventListener('click', () => {
+	document.querySelector('.advantages').scrollIntoView({behavior: 'smooth'})
+})
+
+contactUsButton.addEventListener('click', () => {
+	modalFormCross.classList.remove('close')
+	modalBackground.classList.remove('close')
+	modalForm.classList.remove('close')
+	modalBackground.classList.add('active')
+	modalForm.classList.add('active')
+})
+
+modalFormCross.addEventListener('click', () => {
+	forModalCross(modalForm, modalFormCross)
+})
+
+modalBackground.addEventListener('click', () => {
+	modalFormCross.classList.add('close')
+	modalTeamCross.classList.add('close')
+	setTimeout(() => {
+      modalBackground.classList.add('close')
+		modalForm.classList.add('close')
+		modalTeam.classList.add('close')
+   }, 250)
+	setTimeout(() => {
+		modalBackground.classList.remove('active')
+		modalForm.classList.remove('active')
+		modalTeam.classList.remove('active')
+	}, 400)
+})
+
+// Burger menu
+burgerMenuButton.addEventListener('click', () => {
+	burgerMenu.classList.remove('close')
+	burgerMenuCross.classList.remove('close')
+	burgerMenu.classList.add('active')
+})
+
+modalTeamCross.addEventListener('click', () => {
+	forModalCross(modalTeam, modalTeamCross)
+})
 
 burgerMenuCross.addEventListener('click', () => {
 	burgerMenuClose()
@@ -150,51 +196,4 @@ document.querySelector('.team-burger-js').addEventListener('click', () => {
 
 document.querySelector('.contacts-burger-js').addEventListener('click', () => {
 	burgerMenuClose()
-})
-
-contactUsButton.addEventListener('click', () => {
-	modalFormCross.classList.remove('close')
-	modalBackground.classList.remove('close')
-	modalForm.classList.remove('close')
-	modalBackground.classList.add('active')
-	modalForm.classList.add('active')
-})
-
-modalFormCross.addEventListener('click', () => {
-	modalFormCross.classList.add('close')
-	setTimeout(() => {
-      modalBackground.classList.add('close')
-		modalForm.classList.add('close')
-   }, 250)
-	setTimeout(() => {
-		modalBackground.classList.remove('active')
-		modalForm.classList.remove('active')
-	}, 400)
-})
-
-modalBackground.addEventListener('click', () => {
-	modalFormCross.classList.add('close')
-	modalTeamCross.classList.add('close')
-	setTimeout(() => {
-      modalBackground.classList.add('close')
-		modalForm.classList.add('close')
-		modalTeam.classList.add('close')
-   }, 250)
-	setTimeout(() => {
-		modalBackground.classList.remove('active')
-		modalForm.classList.remove('active')
-		modalTeam.classList.remove('active')
-	}, 400)
-})
-
-modalTeamCross.addEventListener('click', () => {
-	modalTeamCross.classList.add('close')
-	setTimeout(() => {
-      modalBackground.classList.add('close')
-		modalTeam.classList.add('close')
-   }, 250)
-	setTimeout(() => {
-		modalBackground.classList.remove('active')
-		modalTeam.classList.remove('active')
-	}, 400)
 })
