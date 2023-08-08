@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="assets/images/favicon.ico"/>
+	<link rel="stylesheet" href="css/index.min.css">
+	<title>Консалтинговая компания AEQ</title>
+</head>
+<body>
+	<div class="cursor rounded"></div>
+	<div class="modal-background"></div>
+	<div class="modal-form">
+		<div class="modal-form-flex">
+			<h2 class="title lng-modal-form-title">Заказать <span>консультацию</span></h2>
+			<div class="cross modal-form-cross-js cursor-hover-item">
+				<span></span>
+			</div>
+		</div>
+		<form action="send.php" class="form">
+			<div class="form-flex">
+				<div class="form__input">
+					<label for="form-name" class="lng-modal-form-text1">Ваше имя*</label>
+					<input type="text" name="name" id="form-name">
+				</div>
+				<div class="form__input">
+					<label for="form-e-mail" class="lng-modal-form-text2">Ваш e-mail*</label>
+					<input type="email" name="email" id="form-e-mail">
+				</div>
+				<div class="form__input">
+					<label for="form-phone" class="lng-modal-form-text3">Ваш телефон</label>
+					<input type="tel" name="phone" id="form-phone">
+				</div>
+				<div class="form__input">
+					<label for="form-question" class="lng-modal-form-text4">Ваш вопрос</label>
+					<textarea name="question" id="form-question"></textarea>
+				</div>
+			</div>
+			<div class="form-checkbox">
+				<label class="checkbox cursor-hover-item">
+					<input type="checkbox" checked class="real-checkbox">
+					<span class="custom-checkbox"></span>
+					<span class="text lng-modal-form-text5">
+						Я согласен на сбор персональных данных
+					</span>
+				</label>
+			</div>
+			<p class="text lng-modal-form-text6">* - поля, обязательные к заполнению</p>
+			<button type="submit" class="btn form-submit lng-modal-form-text7 cursor-hover-item">Заказать</button>
+		</form>
+	</div>
+	<div class="modal-team">
+		<div class="modal-team__image"></div>
+		<div class="modal-team-body-text">
+			<div class="modal-team-flex">
+				<div class="modal-team-flex__item">
+					<h2 class="title modal-team__title">Владислав Смоенко</h2>
+					<div class="cross modal-team-cross-js cursor-hover-item">
+						<span></span>
+					</div>
+				</div>
+				<p class="description modal-team__description">Управляющий партнер компании AEQ</p>
+			</div>
+			<p class="text modal-team__text">
+				Управляющий партнер компании AEQ. Энергичный и глобально мыслящий анти-кризисный руководитель с опытом комплексной работы в консалтинге, крупном частном инвестиционном фонде и собственных проектах. Специализируется на сложных проектах, требующих анти-кризисного управления, а также на крупных M&A сделках в России и за рубежом.
+				<br><br>
+				Виктор имеет профильное юридическое образование, полученное в РУДН (бакалавр права) и МГЮА им. Кутафина (магистр права). В 2023 году Виктор также получил диплом Московской школы управления Сколково в рамках программы для менеджеров высшего звена Skolkovo Executive MBA for Eurasia.
+				<br><br>
+				Свободно говорит на английском языке. Увлекается катанием на вейкборде, тайским боксом, силовыми видами спорта и путешествиями.
+			</p>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="content">
+			<header class="header">
+				<div class="header-flex">
+					<a href="#" class="logo cursor-hover-item">
+						<img src="assets/images/sprite.svg#logo" alt="лого">
+					</a>
+					<nav class="header-nav">
+						<ul class="nav-list">
+							<li class="nav-list__item active">
+								<button class="about-link-js lng-nav-about cursor-hover-item">о нас</button>
+							</li>
+							<li class="nav-list__item">
+								<button class="advantages-link-js lng-nav-advantages cursor-hover-item">Преимущества</button>
+							</li>
+							<li class="nav-list__item">
+								<button class="services-link-js lng-nav-services cursor-hover-item">Услуги</button>
+							</li>
+							<li class="nav-list__item">
+								<button class="partners-link-js lng-nav-partners cursor-hover-item">Партнеры</button>
+							</li>
+							<li class="nav-list__item">
+								<button class="team-link-js lng-nav-team cursor-hover-item">команда</button>
+							</li>
+							<li class="nav-list__item">
+								<button class="contacts-link-js lng-nav-contacts cursor-hover-item">контакты</button>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-flex">
+					<div class="header-lang-button__container">
+						<button class="change-lang ru cursor-hover-item">ru</button>
+						<button class="change-lang en cursor-hover-item">en</button>
+					</div>
+					<div class="header-social">
+						<a href="" class="cursor-hover-item">
+							<img src="assets/images/sprite.svg#whatsapp_blue" alt="whatsapp">
+						</a>
+						<a href="" class="cursor-hover-item">
+							<img src="assets/images/sprite.svg#telegram_blue" alt="telegram">
+						</a>
+						<a href="" class="cursor-hover-item">
+							<img src="assets/images/sprite.svg#mail_blue" alt="mail">
+						</a>
+					</div>
+					
+				</div>
+				<div class="burger-menu">
+					<div class="burger-top">
+						<a href="#" class="logo">
+							<img src="assets/images/sprite.svg#logo" alt="лого">
+						</a>
+			
+						<div class="burger-menu-cross-js cross">
+							<span></span>
+						</div>
+					</div>
+			
+					<div class="burger-main">
+						<div class="burger-nav">
+							<ul class="nav-list">
+								<li class="nav-list__item active">
+									<a href="#about" class="about-burger-js lng-burger-nav-about">о нас</a>
+								</li>
+								<li class="nav-list__item">
+									<a href="#advantages" class="advantages-burger-js lng-burger-nav-advantages">Преимущества</a>
+								</li>
+								<li class="nav-list__item">
+									<a href="#services" class="services-burger-js lng-burger-nav-services">Услуги</a>
+								</li>
+								<li class="nav-list__item">
+									<a href="#partners" class="partners-burger-js lng-burger-nav-partners">Партнеры</a>
+								</li>
+								<li class="nav-list__item">
+									<a href="#team" class="team-burger-js lng-burger-nav-team">команда</a>
+								</li>
+								<li class="nav-list__item">
+									<a href="#contacts" class="contacts-burger-js lng-burger-nav-contacts">контакты</a>
+								</li>
+							</ul>
+						</div>
+						<div class="burger-lang-button__container">
+							<button class="change-lang ru">ru</button>
+							<button class="change-lang en">en</button>
+						</div>
+						<div class="burger-social">
+							<a href="">
+								<img src="assets/images/sprite.svg#whatsapp_blue" alt="whatsapp">
+							</a>
+							<a href="">
+								<img src="assets/images/sprite.svg#telegram_blue" alt="telegram">
+							</a>
+							<a href="">
+								<img src="assets/images/sprite.svg#mail_blue" alt="mail">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="burger-menu-button">
+					<span></span>
+				</div>
+			</header>
+			<main class="main">
+				<a name="about"></a>
+				<section class="about">
+					<div class="container">
+						<h1 class="title lng-about-title">Консалтинговая компания AEQ</h1>
+						<div class="about-flex">
+							<p class="text lng-about-text1">
+								Помогаем инвестиционным фондам,<br>бизнесу и частным лицам сохранять<br>и приумножать активы.
+							</p>
+							<p class="text lng-about-text2">
+								Наш международный опыт и многолетняя экспертиза в управлении <br>активами, консалтинге, юриспруденции и финансах помогут <br>трансформировать ваш бизнес своевременно и комфортно. Мы гордимся<br>репутацией честного, компетентного и стабильного партнёра.
+							</p>
+						</div>
+						<button class="btn read-more-js lng-about-read-more cursor-hover-item">Подробнее</button>
+						<div class="arrow-down">
+							<span></span>
+						</div>
+					</div>
+				</section>
+				<a name="advantages"></a>
+				<section class="advantages">
+					<div class="container">
+						<h2 class="title lng-advantages-title">Преимущества</h2>
+						<div class="advantages-flex">
+							<div class="advantages-flex__item wow animate__animated animate__fadeInRight" data-wow-duration="1.5s">
+								<picture>
+									<source srcset="assets/images/solution.avif" type="image/avif" />
+									<source srcset="assets/images/solution.webp" type="image/webp" />
+									<img src="assets/images/solution.png" alt="solution">
+								</picture>
+								<p class="text lng-advantages-text1">Простое и актуальное<br>решение задач</p>
+							</div>
+							<div class="advantages-flex__item wow animate__animated animate__fadeInRight" data-wow-duration="2s">
+								<picture>
+									<source srcset="assets/images/security.avif" type="image/avif" />
+									<source srcset="assets/images/security.webp" type="image/webp" />
+									<img src="assets/images/security.png" alt="security">
+								</picture>
+								<p class="text lng-advantages-text2">Конфиденциальность<br>и индивидуальный подход</p>
+							</div>
+							<div class="advantages-flex__item wow animate__animated animate__fadeInRight" data-wow-duration="2.5s">
+								<picture>
+									<source srcset="assets/images/expertise.avif" type="image/avif" />
+									<source srcset="assets/images/expertise.webp" type="image/webp" />
+									<img src="assets/images/expertise.png" alt="expertise">
+								</picture>
+								<p class="text lng-advantages-text3">Международная экспертиза<br>и высокие стандарты</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<a name="services"></a>
+				<section class="services">
+					<div class="container">
+						<h2 class="title lng-services-title">Услуги</h2>
+						<p class="subtitle lng-services-subtitle">Решение сложных задач.<br><span>Просто.</span></p>
+						<p class="text lng-services-text1">Независимая команда с многолетним опытом<br>в управлении активами, консалтинге и финансах<br>подберёт подходящее вам решение.</p>
+						<div class="services-flex wow animate__animated animate__fadeInRight" data-wow-duration="2s">
+							<div class="services-flex__item-image">
+								<picture>
+									<source srcset="assets/images/folder.avif" type="image/avif" />
+									<source srcset="assets/images/folder.webp" type="image/webp" />
+									<img src="assets/images/folder.png" alt="folder">
+								</picture>
+							</div>
+							<div class="services-flex__item">
+								<h3 class="title lng-services-title1">Управление активами:</h3>
+								<ul class="services-flex__item-list">
+									<li class="services-flex__item-list-item lng-services-list-text1">управление фондами</li>
+									<li class="services-flex__item-list-item lng-services-list-text2">консультирование по вопросам стратегии развития бизнеса</li>
+									<li class="services-flex__item-list-item lng-services-list-text3">структурирование владения активами и корпоративного управления</li>
+									<li class="services-flex__item-list-item lng-services-list-text4">планирование наследования</li>
+								</ul>
+							</div>
+						</div>
+						<div class="services-flex services-flex-reverse wow animate__animated animate__fadeInLeft" data-wow-duration="2s">
+							<div class="services-flex__item">
+								<h3 class="title lng-services-title2">Управление инвестициями:</h3>
+								<ul class="services-flex__item-list">
+									<li class="services-flex__item-list-item lng-services-list-text5">разработка и анализ персональных инвестиционных стратегий</li>
+									<li class="services-flex__item-list-item lng-services-list-text6">организация финансирования</li>
+									<li class="services-flex__item-list-item lng-services-list-text7">консультирование по прямым инвестициям в бизнес и недвижимость</li>
+								</ul>
+							</div>
+							<div class="services-flex__item-image">
+								<picture>
+									<source srcset="assets/images/safe.avif" type="image/avif" />
+									<source srcset="assets/images/safe.webp" type="image/webp" />
+									<img src="assets/images/safe.png" alt="safe">
+								</picture>
+							</div>
+						</div>
+						<div class="services-flex wow animate__animated animate__fadeInRight" data-wow-duration="2s">
+							<div class="services-flex__item-image">
+								<picture>
+									<source srcset="assets/images/law.avif" type="image/avif" />
+									<source srcset="assets/images/law.webp" type="image/webp" />
+									<img src="assets/images/law.png" alt="law">
+								</picture>
+							</div>
+							<div class="services-flex__item">
+								<h3 class="title lng-services-title3">Юридические и финансовые услуги:</h3>
+								<ul class="services-flex__item-list">
+									<li class="services-flex__item-list-item lng-services-list-text8">комплексное юридическое сопровождение юридических и физических лиц (включая сопровождение крупных M&A сделок)</li>
+									<li class="services-flex__item-list-item lng-services-list-text9">финансовое планирование</li>
+									<li class="services-flex__item-list-item lng-services-list-text10">ведение консолидированной отчетности по всем активам</li>
+								</ul>
+							</div>
+						</div>
+						<div class="services-contact-us wow animate__animated animate__fadeInLeft" data-wow-duration="2s">
+							<p class="text lng-services-list-text11">Связаться с нами</p>
+							<button class="btn btn-services-js lng-services-btn cursor-hover-item">Связаться</button>
+						</div>
+					</div>
+				</section>
+				<a name="partners"></a>
+				<section class="partners">
+					<div class="container">
+						<h2 class="title lng-partners-title">Партнеры</h2>
+						<div class="partners-flex wow animate__animated animate__fadeInUp" data-wow-duration="2s">
+							<div class="partners__item">
+								<picture>
+									<source srcset="assets/images/pareto-print.avif" type="image/avif" />
+									<source srcset="assets/images/pareto-print.webp" type="image/webp" />
+									<img src="assets/images/pareto-print.png" alt="Парето-Принт">
+								</picture>
+							</div>
+							<div class="partners__item">
+								<picture>
+									<source srcset="assets/images/azbuka.avif" type="image/avif" />
+									<source srcset="assets/images/azbuka.webp" type="image/webp" />
+									<img src="assets/images/azbuka.png" alt="Азбука">
+								</picture>
+							</div>
+							<div class="partners__item">
+								<picture>
+									<source srcset="assets/images/mozaik.avif" type="image/avif" />
+									<source srcset="assets/images/mozaik.webp" type="image/webp" />
+									<img src="assets/images/mozaik.png" alt="Мозаик">
+								</picture>
+							</div>
+							<div class="partners__item">
+								<picture>
+									<source srcset="assets/images/strelka.avif" type="image/avif" />
+									<source srcset="assets/images/strelka.webp" type="image/webp" />
+									<img src="assets/images/strelka.png" alt="Стрелка">
+								</picture>
+							</div>
+							<div class="partners__item">
+								<picture>
+									<source srcset="assets/images/cinema_pioner.avif" type="image/avif" />
+									<source srcset="assets/images/cinema_pioner.webp" type="image/webp" />
+									<img src="assets/images/cinema_pioner.png" alt="Кинотеатр пионер">
+								</picture>
+							</div>
+							<div class="partners__item">
+								<picture>
+									<source srcset="assets/images/cinema_park.avif" type="image/avif" />
+									<source srcset="assets/images/cinema_park.webp" type="image/webp" />
+									<img src="assets/images/cinema_park.png" alt="Кино синема">
+								</picture>
+							</div>
+						</div>
+						<!-- Slider main container -->
+						<div class="swiper swiper-partners">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide swiper-slide-partners">
+									<picture>
+										<source srcset="assets/images/pareto-print.avif" type="image/avif" />
+										<source srcset="assets/images/pareto-print.webp" type="image/webp" />
+										<img src="assets/images/pareto-print.png" alt="Парето-Принт">
+									</picture>
+								</div>
+								<div class="swiper-slide swiper-slide-partners">
+									<picture>
+										<source srcset="assets/images/azbuka.avif" type="image/avif" />
+										<source srcset="assets/images/azbuka.webp" type="image/webp" />
+										<img src="assets/images/azbuka.png" alt="Азбука">
+									</picture>
+								</div>
+								<div class="swiper-slide swiper-slide-partners">
+									<picture>
+										<source srcset="assets/images/mozaik.avif" type="image/avif" />
+										<source srcset="assets/images/mozaik.webp" type="image/webp" />
+										<img src="assets/images/mozaik.png" alt="Мозаик">
+									</picture>
+								</div>
+								<div class="swiper-slide swiper-slide-partners">
+									<picture>
+										<source srcset="assets/images/strelka.avif" type="image/avif" />
+										<source srcset="assets/images/strelka.webp" type="image/webp" />
+										<img src="assets/images/strelka.png" alt="Стрелка">
+									</picture>
+								</div>
+								<div class="swiper-slide swiper-slide-partners">
+									<picture>
+										<source srcset="assets/images/cinema_pioner.avif" type="image/avif" />
+										<source srcset="assets/images/cinema_pioner.webp" type="image/webp" />
+										<img src="assets/images/cinema_pioner.png" alt="Кинотеатр пионер">
+									</picture>
+								</div>
+								<div class="swiper-slide swiper-slide-partners">
+									<picture>
+										<source srcset="assets/images/cinema_park.avif" type="image/avif" />
+										<source srcset="assets/images/cinema_park.webp" type="image/webp" />
+										<img src="assets/images/cinema_park.png" alt="Кино синема">
+									</picture>
+								</div>
+							</div>
+							<div class="swiper-pagination swiper-pagination-partners"></div>
+						
+							<div class="swiper-button-prev swiper-button-prev-partners"></div>
+							<div class="swiper-button-next swiper-button-next-partners"></div>
+						</div>
+					</div>
+				</section>
+				<a name="team"></a>
+				<section class="team">
+					<div class="container">
+						<h2 class="title lng-team-title">Команда</h2>
+						<div class="team-flex">
+							<div class="team-flex__item wow animate__animated animate__fadeInUp cursor-hover-item" data-wow-duration="1.5s" data-name="Владислав Смоенко" data-job="Управляющий партнер компании AEQ">
+								<picture>
+									<source srcset="assets/images/team_01.avif" type="image/avif" />
+									<source srcset="assets/images/team_01.webp" type="image/webp" />
+									<img src="assets/images/team_01.jpg" alt="Владислав Смоенко" class="team-flex__img">
+								</picture>
+								<h3 class="subtitle lng-team-subtitle1">Владислав<br>Смоенко</h3>
+								<p class="text lng-team-text1">Управляющий партнер компании AEQ</p>
+							</div>
+							<div class="team-flex__item wow animate__animated animate__fadeInUp cursor-hover-item" data-wow-duration="2s" data-name="Алена Бросова" data-job="Управляющий партнер компании AEQ">
+								<picture>
+									<source srcset="assets/images/team_02.avif" type="image/avif" />
+									<source srcset="assets/images/team_02.webp" type="image/webp" />
+									<img src="assets/images/team_02.jpg" alt="Алена Бросова" class="team-flex__img">
+								</picture>
+								<h3 class="subtitle lng-team-subtitle2">Алена<br>Бросова</h3>
+								<p class="text lng-team-text2">Управляющий партнер компании AEQ</p>
+							</div>
+							<div class="team-flex__item wow animate__animated animate__fadeInUp cursor-hover-item" data-wow-duration="2.5s" data-name="Александра Крюкова" data-job="Управляющий партнер компании AEQ">
+								<picture>
+									<source srcset="assets/images/team_03.avif" type="image/avif" />
+									<source srcset="assets/images/team_03.webp" type="image/webp" />
+									<img src="assets/images/team_03.jpg" alt="Александра Крюкова" class="team-flex__img">
+								</picture>
+								<h3 class="subtitle lng-team-subtitle3">Александра<br>Крюкова</h3>
+								<p class="text lng-team-text3">Управляющий партнер компании AEQ</p>
+							</div>
+							<div class="team-flex__item wow animate__animated animate__fadeInUp cursor-hover-item" data-wow-duration="1.5s" data-name="Максим Варешюк" data-job="Управляющий партнер компании AEQ">
+								<picture>
+									<source srcset="assets/images/team_04.avif" type="image/avif" />
+									<source srcset="assets/images/team_04.webp" type="image/webp" />
+									<img src="assets/images/team_04.jpg" alt="Максим Варешюк" class="team-flex__img">
+								</picture>
+								<h3 class="subtitle lng-team-subtitle4">Максим<br>Варешюк</h3>
+								<p class="text lng-team-text4">Управляющий партнер компании AEQ</p>
+							</div>
+							<div class="team-flex__item wow animate__animated animate__fadeInUp cursor-hover-item" data-wow-duration="2s" data-name="Артем Гавришин" data-job="Управляющий партнер компании AEQ">
+								<picture>
+									<source srcset="assets/images/team_05.avif" type="image/avif" />
+									<source srcset="assets/images/team_05.webp" type="image/webp" />
+									<img src="assets/images/team_05.jpg" alt="Артем Гавришин" class="team-flex__img">
+								</picture>
+								<h3 class="subtitle lng-team-subtitle5">Артем<br>Гавришин</h3>
+								<p class="text lng-team-text5">Управляющий партнер компании AEQ</p>
+							</div>
+							<div class="team-flex__item wow animate__animated animate__fadeInUp cursor-hover-item" data-wow-duration="2.5s" data-name="Оксана Травинская" data-job="Управляющий партнер компании AEQ">
+								<picture>
+									<source srcset="assets/images/team_06.avif" type="image/avif" />
+									<source srcset="assets/images/team_06.webp" type="image/webp" />
+									<img src="assets/images/team_06.png" alt="Оксана Травинская" class="team-flex__img">
+								</picture>
+								<h3 class="subtitle lng-team-subtitle6">Оксана<br>Травинская</h3>
+								<p class="text lng-team-text6">Управляющий партнер компании AEQ</p>
+							</div>
+						</div>
+						<!-- Slider main container -->
+						<div class="swiper swiper-team">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide swiper-slide-team">
+									<div class="team-flex__item" data-name="Владислав Смоенко" data-job="Управляющий партнер компании AEQ">
+										<picture>
+											<source srcset="assets/images/team_01.avif" type="image/avif" />
+											<source srcset="assets/images/team_01.webp" type="image/webp" />
+											<img src="assets/images/team_01.jpg" alt="Владислав Смоенко" class="team-flex__img">
+										</picture>
+										<h3 class="subtitle lng-team-subtitle7">Владислав<br>Смоенко</h3>
+										<p class="text lng-team-text7">Управляющий партнер компании AEQ</p>
+									</div>
+								</div>
+								<div class="swiper-slide swiper-slide-team">
+									<div class="team-flex__item" data-name="Алена Бросова" data-job="Управляющий партнер компании AEQ">
+										<picture>
+											<source srcset="assets/images/team_02.avif" type="image/avif" />
+											<source srcset="assets/images/team_02.webp" type="image/webp" />
+											<img src="assets/images/team_02.png" alt="Алена Бросова" class="team-flex__img">
+										</picture>
+										<h3 class="subtitle lng-team-subtitle8">Алена<br>Бросова</h3>
+										<p class="text lng-team-text8">Управляющий партнер компании AEQ</p>
+									</div>
+								</div>
+								<div class="swiper-slide swiper-slide-team">
+									<div class="team-flex__item" data-name="Александра Крюкова" data-job="Управляющий партнер компании AEQ">
+										<picture>
+											<source srcset="assets/images/team_03.avif" type="image/avif" />
+											<source srcset="assets/images/team_03.webp" type="image/webp" />
+											<img src="assets/images/team_03.jpg" alt="Александра Крюкова" class="team-flex__img">
+										</picture>
+										<h3 class="subtitle lng-team-subtitle9">Александра<br>Крюкова</h3>
+										<p class="text lng-team-text9">Управляющий партнер компании AEQ</p>
+									</div>
+								</div>
+								<div class="swiper-slide swiper-slide-team">
+									<div class="team-flex__item" data-name="Максим Варешюк" data-job="Управляющий партнер компании AEQ">
+										<picture>
+											<source srcset="assets/images/team_04.avif" type="image/avif" />
+											<source srcset="assets/images/team_04.webp" type="image/webp" />
+											<img src="assets/images/team_04.jpg" alt="Максим Варешюк" class="team-flex__img">
+										</picture>
+										<h3 class="subtitle lng-team-subtitle10">Максим<br>Варешюк</h3>
+										<p class="text lng-team-text10">Управляющий партнер компании AEQ</p>
+									</div>
+								</div>
+								<div class="swiper-slide swiper-slide-team">
+									<div class="team-flex__item" data-name="Артем Гавришин" data-job="Управляющий партнер компании AEQ">
+										<picture>
+											<source srcset="assets/images/team_05.avif" type="image/avif" />
+											<source srcset="assets/images/team_05.webp" type="image/webp" />
+											<img src="assets/images/team_05.jpg" alt="Артем Гавришин" class="team-flex__img">
+										</picture>
+										<h3 class="subtitle lng-team-subtitle11">Артем<br>Гавришин</h3>
+										<p class="text lng-team-text11">Управляющий партнер компании AEQ</p>
+									</div>
+								</div>
+								<div class="swiper-slide swiper-slide-team">
+									<div class="team-flex__item" data-name="Оксана Травинская" data-job="Управляющий партнер компании AEQ">
+										<picture>
+											<source srcset="assets/images/team_06.avif" type="image/avif" />
+											<source srcset="assets/images/team_06.webp" type="image/webp" />
+											<img src="assets/images/team_06.jpg" alt="Оксана Травинская" class="team-flex__img">
+										</picture>
+										<h3 class="subtitle lng-team-subtitle12">Оксана<br>Травинская</h3>
+										<p class="text lng-team-text12">Управляющий партнер компании AEQ</p>
+									</div>
+								</div>
+							</div>
+							<!-- If we need pagination -->
+							<div class="swiper-pagination swiper-pagination-team"></div>
+						
+							<!-- If we need navigation buttons -->
+							<div class="swiper-button-prev swiper-button-prev-team"></div>
+							<div class="swiper-button-next swiper-button-next-team"></div>
+						</div>
+					</div>
+				</section>
+				<a name="contacts"></a>
+				<section class="contacts">
+					<div class="container">
+						<h2 class="title lng-contacts-title">Контакты</h2>
+					</div>
+					<div class="map">
+						<iframe src="https://yandex.com/map-widget/v1/?um=constructor%3Af6ff5f8787d61b85139648c5d9d7776c197baafa9b9fa76d551014c8b006bf7f&amp;source=constructor" frameborder="0"></iframe>
+					</div>
+					<div class="contacts-data">
+						<div class="contacts-data-flex">
+							<img src="assets/images/sprite.svg#location" alt="location" class="contacts-data__img">
+							<p class="text lng-contacts-text">123111, Москва, Оружейная наб., 6с2</p>
+						</div>
+						<div class="contacts-data-flex">
+							<img src="assets/images/sprite.svg#phone" alt="phone" class="contacts-data__img">
+							<a href="tel:+79153333333" class="text">+7 915 333 33 33</a>
+						</div>
+						<div class="contacts-data-flex">
+							<img src="assets/images/sprite.svg#contacts_mail" alt="phone" class="contacts-data__img">
+							<a href="hello@mail.group" class="text">hello@mail.group</a>
+						</div>
+						<div class="contacts-data-flex">
+							<img src="assets/images/sprite.svg#social" alt="phone" class="contacts-data__img">
+							<div class="contacts-data-flex__item">
+								<a href="" class="cursor-hover-item">
+									<img src="assets/images/sprite.svg#whatsapp_black" alt="whatsapp">
+								</a>
+								<a href="" class="cursor-hover-item">
+									<img src="assets/images/sprite.svg#telegram_black" alt="telegram">
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+		<footer class="footer">
+			<div class="footer-flex">
+				<a href="#" class="logo cursor-hover-item">
+					<img src="assets/images/sprite.svg#logo_white" alt="лого">
+				</a>
+				<nav class="footer-nav">
+					<ul class="nav-list">
+						<li class="nav-list__item active">
+							<button class="about-link-js lng-footer-nav-about cursor-hover-item">о нас</button>
+						</li>
+						<li class="nav-list__item">
+							<button class="advantages-link-js lng-footer-nav-advantages cursor-hover-item">Преимущества</button>
+						</li>
+						<li class="nav-list__item">
+							<button class="services-link-js lng-footer-nav-services cursor-hover-item">Услуги</button>
+						</li>
+						<li class="nav-list__item">
+							<button class="partners-link-js lng-footer-nav-partners cursor-hover-item">Партнеры</button>
+						</li>
+						<li class="nav-list__item">
+							<button class="team-link-js lng-footer-nav-team cursor-hover-item">команда</button>
+						</li>
+						<li class="nav-list__item">
+							<button class="contacts-link-js lng-footer-nav-contacts cursor-hover-item">контакты</button>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="footer-flex">
+				<div class="footer-lang-button__container">
+					<button class="change-lang ru cursor-hover-item">ru</button>
+					<button class="change-lang en cursor-hover-item">en</button>
+				</div>
+				<div class="footer-social">
+					<a href="" class="cursor-hover-item">
+						<img src="assets/images/sprite.svg#whatsapp_white" alt="whatsapp">
+					</a>
+					<a href="" class="cursor-hover-item">
+						<img src="assets/images/sprite.svg#telegram_white" alt="telegram">
+					</a>
+					<a href="" class="cursor-hover-item">
+						<img src="assets/images/sprite.svg#mail_white" alt="mail">
+					</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="js/index.min.js"></script>
+</body>
+</html>
