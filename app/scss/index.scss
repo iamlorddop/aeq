@@ -82,7 +82,7 @@ img {
 	--body-color: #000000;
 	--blue-background: #01049B;
 	--blue-color: #00029C;
-	--body-background: linear-gradient(180deg, #EAEAEA 58%, rgba(234, 234, 234, 0.00) 63%);	
+	--body-background: linear-gradient(180deg, #EAEAEA 58%, rgba(234, 234, 234, 0.00) 63%, #FFF);	
 	--white-color: #fff;
 	--btn-click-background: #00027D;
 	--border-color: #CCCCCC;
@@ -92,6 +92,7 @@ img {
 	--border-bullet: #B3B3B3;
 	--modal-background: #01049B;
 	--input-color: #777777;
+	--error: red;
 }
 
 // main styles
@@ -135,6 +136,14 @@ body {
 	background: var(--white-color);
 	border-radius: 15px;
 	z-index: 999;
+}
+
+%error-styles {
+	border: none;
+	-webkit-appearance: none !important;
+	box-shadow: 0 0 10px var(--error) !important;
+	-webkit-box-shadow: 0 0 10px var(--error) !important;
+	-moz-box-shadow: 0 0 10px var(--error) !important;
 }
 
 // cursor
@@ -284,6 +293,18 @@ body {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	gap: 18px;
+}
+
+.form__input {
+	input._error {
+		@extend %error-styles;
+	}
+}
+
+.checkbox._error {
+	.custom-checkbox {
+		@extend %error-styles;
+	}
 }
 
 .form__input {
@@ -1050,6 +1071,43 @@ section {
 	.header-lang-button__container,
 	.header-social {
 		display: none;
+	}
+
+	@keyframes burgerbuttonscale {
+		0% {
+			transform: scale(1);
+		}
+		100% {
+			transform: scale(0);
+		}
+	}
+
+	@keyframes burgerbuttonbefore {
+		0% {
+			top: 0;
+		}
+		100% {
+			top: 8px;
+		}
+	}
+
+	@keyframes burgerbuttonafter {
+		0% {
+			bottom: 0;
+		}
+		100% {
+			bottom: 8px;
+		}
+	}
+
+	.burger-menu-button.close {
+		animation: burgerbuttonscale .7s linear forwards;
+		&::before {
+			animation: burgerbuttonbefore .2s ease-in forwards;
+		}
+		&::after {
+			animation: burgerbuttonafter .2s ease-in forwards;
+		}
 	}
 
 	.burger-menu-button {
