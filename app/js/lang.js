@@ -291,6 +291,18 @@ const langObj = {
 		"ru" : "контакты",
 		"en" : "contacts"
 	},
+	"modal-reject-title" : {
+		"ru" : "Произошла ошибка",
+		"en" : "An error has occurred"
+	},
+	"form-reject-text" : {
+		"ru" : "Во время отправки данных произошла ошибка",
+		"en" : "An error occurred while sending data"
+	},
+	"modal-done-title" : {
+		"ru" : "Данные успешно отправлены!",
+		"en" : "Data sent successfully!"
+	},
 	"modal-form-title" : {
 		"ru" : "Заказать <span>консультацию</span>",
 		"en" : "Order <span>a consultation</span>"
