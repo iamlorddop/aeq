@@ -61,7 +61,7 @@ const readMore = document.querySelector('.read-more-js')
 const contactUsButton = document.querySelector('.btn-services-js')
 const modalForm = document.querySelector('.modal-form')
 const modalBackground = document.querySelector('.modal-background')
-const modalFormCross = document.querySelector('.modal-form-cross-js')
+const modalFormCrosses = document.querySelectorAll('.modal-form-cross-js')
 const burgerMenuButton = document.querySelector('.burger-menu-button')
 const burgerMenu = document.querySelector('.burger-menu')
 const burgerMenuCross = document.querySelector('.burger-menu-cross-js')
@@ -152,19 +152,33 @@ readMore.addEventListener('click', () => {
 })
 
 contactUsButton.addEventListener('click', () => {
-	modalFormCross.classList.remove('close')
+	modalFormCrosses[0].classList.remove('close')
+	modalFormCrosses[1].classList.remove('close')
+	modalFormCrosses[2].classList.remove('close')
 	modalBackground.classList.remove('close')
 	modalForm.classList.remove('close')
 	modalBackground.classList.add('active')
 	modalForm.classList.add('active')
 })
 
-modalFormCross.addEventListener('click', () => {
-	forModalCross(modalForm, modalFormCross)
+modalFormCrosses.forEach(cross => {
+	cross.addEventListener('click', () => {
+		forModalCross(modalForm, cross)
+		setTimeout(() => {
+			for (let input of document.querySelectorAll('._req')) {
+				formRemoveError(input)
+			}
+			modalReject.classList.remove('active')
+			modalDone.classList.remove('active')
+			modalFill.classList.remove('close')
+		}, 450)
+	})
 })
 
 modalBackground.addEventListener('click', () => {
-	modalFormCross.classList.add('close')
+	modalFormCrosses[0].classList.add('close')
+	modalFormCrosses[1].classList.add('close')
+	modalFormCrosses[2].classList.add('close')
 	modalTeamCross.classList.add('close')
 	setTimeout(() => {
       modalBackground.classList.add('close')
@@ -176,6 +190,14 @@ modalBackground.addEventListener('click', () => {
 		modalForm.classList.remove('active')
 		modalTeam.classList.remove('active')
 	}, 400)
+	setTimeout(() => {
+		for (let input of document.querySelectorAll('._req')) {
+			formRemoveError(input)
+		}
+		modalReject.classList.remove('active')
+		modalDone.classList.remove('active')
+		modalFill.classList.remove('close')
+	}, 450)
 })
 
 // Burger menu
@@ -219,6 +241,10 @@ document.querySelector('.contacts-burger-js').addEventListener('click', () => {
 })
 
 // Form send
+const modalReject = document.querySelector('.modal-reject')
+const modalDone = document.querySelector('.modal-done')
+const modalFill = document.querySelector('.modal-fill')
+const modalErrorText = document.querySelector('.modal-reject__error')
 const form = document.querySelector('.form')
 const phone = document.querySelector('._tel')
 const formButton = document.querySelector('.form-submit')
@@ -239,9 +265,14 @@ async function formSend(e) {
       if (response.ok) {
          let result = await response.json()
          console.log(result.message)
-         form.reset() // in html
+			modalFill.classList.add('close')
+			modalDone.classList.add('active')
+         form.reset()
       } else {
-         console.log('Ошибка') // in html
+			modalFill.classList.add('close')
+			modalErrorText.innerHTML = `${response.statusText} : ${response.status}`
+			modalReject.classList.add('active')
+			form.reset()
       }
    }
 }
