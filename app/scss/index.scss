@@ -93,6 +93,8 @@ img {
 	--modal-background: #01049B;
 	--input-color: #777777;
 	--error: red;
+	--error-color: #ff4141;
+	--error-background: #ffcaca;
 }
 
 // main styles
@@ -176,6 +178,38 @@ body {
 }
 
 // modal form
+.modal-reject,
+.modal-done {
+	display: none;
+}
+
+.modal-reject.active,
+.modal-done.active {
+	display: block;
+}
+
+.modal-fill.close {
+	display: none;
+}
+
+.modal-reject {
+	.text {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 20px;
+	}
+}
+
+.modal-reject__error {
+	padding: 8px 20px;
+	color: var(--error-color);
+	background: var(--error-background);
+	font-weight: 500;
+	border-radius: 30px;
+	border: 1px solid var(--error-color);
+}
+
 .modal-background {
 	position: fixed;
 	top: 0;
@@ -242,7 +276,7 @@ body {
 
 .modal-form {
 	@extend %modal-styles;
-	top: 1%;
+	top: 50%;
 	min-width: 320px;
 	.title {
 		margin-bottom: 50px;
@@ -257,19 +291,19 @@ body {
 
 @keyframes modalactive {
 	0% {
-		transform: translate(-50%) scale(0);
+		transform: translate(-50%, -50%) scale(0);
 	}
 	100% {
-		transform: translate(-50%) scale(1);
+		transform: translate(-50%, -50%) scale(1);
 	}
 }
 
 @keyframes modalclose {
 	0% {
-		transform: translate(-50%) scale(1);
+		transform: translate(-50%, -50%) scale(1);
 	}
 	100% {
-		transform: translate(-50%) scale(0);
+		transform: translate(-50%, -50%) scale(0);
 	}
 }
 
