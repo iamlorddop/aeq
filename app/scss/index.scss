@@ -960,12 +960,12 @@ section {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 20px;
+	gap: 5px;
 }
 
 .team-flex__item {
 	position: relative;
-	padding-bottom: 16px;
+	padding: 5px 5px 16px;
 	background: var(--white-color);
 	border-radius: 15px;
 	transition: transform .3s ease-in-out;
@@ -1050,13 +1050,19 @@ section {
 		gap: 35px;
 	}
 
+	.modal-form {
+		padding: 40px;
+	}
+
 	.modal-team {
 		padding: 30px 20px;
 		flex-wrap: wrap;
 		gap: 22px;
+		height: 760px;
+		overflow: scroll;
 		.cross {
 			position: absolute;
-			top: 4%;
+			top: 6%;
 			right: 6%;
 			span {
 				width: 3px;
@@ -1195,8 +1201,8 @@ section {
 	}
 
 	.modal-team {
+		height: 700px;
 		.cross {
-			top: 3%;
 			right: 10%;
 		}
 	}
@@ -1230,10 +1236,9 @@ section {
 	}
 
 	.modal-team {
-		position: absolute;
-		top: 420%;
+		height: 600px;
 		.cross {
-			top: 5%;
+			top: 6%;
 			right: 10%;
 		}
 	}
@@ -1474,7 +1479,6 @@ section {
 @media (max-width: 490px) {
 	.modal-team {
 		.cross {
-			top: 4%;
 			right: 14%;
 		}
 	}
@@ -1482,14 +1486,14 @@ section {
 
 @media (max-width: 375px) {
 	.modal-form {
-		position: absolute;
-		top: 435%;
+		height: 600px;
+		overflow: scroll;
 	}
-	
+
 	.modal-team {
 		.cross {
-			top: 3%;
-			right: 16%;
+			top: 6%;
+			right: 14%;
 		}
 	}
 }
@@ -1498,6 +1502,40 @@ section {
 	.about {
 		.title {
 			font-size: 30px;
+		}
+	}
+}
+
+@media (max-width: 280px) {
+	.advantages-flex__item {
+		img {
+			margin: 0 10px 0 0;
+			width: 50px;
+		}
+	}
+
+	.services-flex {
+		.title {
+			font-size: 28px;
+		}
+	}
+
+	.services-contact-us {
+		.btn {
+			padding: 12px 40px; 
+		}
+	}
+
+	.team-flex__img {
+		width: 230px;
+	}
+
+	.contacts-data {
+		padding: 50px 20px 40px;
+	}
+	.footer-flex {
+		&:nth-child(2) {
+			gap: 30px;
 		}
 	}
 }
