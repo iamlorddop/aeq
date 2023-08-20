@@ -40,7 +40,7 @@ if (modalLinks.length > 0) {
 			let memberJob = modalLink.dataset.job
 			if (memberName == 'Владислав Смоенко') {
 				changeTextInModalTeam(
-					'url("../assets/images/team_01.jpg")',
+					'url("assets/images/team_01.jpg")',
 					memberName,
 					memberJob,
 					aboutTeamMember[memberName],
@@ -50,7 +50,7 @@ if (modalLinks.length > 0) {
 				openModalTeam()
 			} else if (modalLink.dataset.name == 'Алена Бросова') {
 				changeTextInModalTeam(
-					'url("../assets/images/team_02.jpg")',
+					'url("assets/images/team_02.jpg")',
 					memberName,
 					memberJob,
 					aboutTeamMember[memberName],
@@ -60,7 +60,7 @@ if (modalLinks.length > 0) {
 				openModalTeam()
 			} else if (modalLink.dataset.name == 'Александра Крюкова') {
 				changeTextInModalTeam(
-					'url("../assets/images/team_03.jpg")',
+					'url("assets/images/team_03.jpg")',
 					memberName,
 					memberJob,
 					aboutTeamMember[memberName],
@@ -70,7 +70,7 @@ if (modalLinks.length > 0) {
 				openModalTeam()
 			} else if (modalLink.dataset.name == 'Максим Варешюк') {
 				changeTextInModalTeam(
-					'url("../assets/images/team_04.jpg")',
+					'url("assets/images/team_04.jpg")',
 					memberName,
 					memberJob,
 					aboutTeamMember[memberName],
@@ -80,7 +80,7 @@ if (modalLinks.length > 0) {
 				openModalTeam()
 			} else if (modalLink.dataset.name == 'Артем Гавришин') {
 				changeTextInModalTeam(
-					'url("../assets/images/team_05.jpg")',
+					'url("assets/images/team_05.jpg")',
 					memberName,
 					memberJob,
 					aboutTeamMember[memberName],
@@ -90,7 +90,7 @@ if (modalLinks.length > 0) {
 				openModalTeam()
 			} else if (modalLink.dataset.name == 'Оксана Травинская') {
 				changeTextInModalTeam(
-					'url("../assets/images/team_06.jpg")',
+					'url("assets/images/team_06.jpg")',
 					memberName,
 					memberJob,
 					aboutTeamMember[memberName],
