@@ -1008,13 +1008,27 @@ section {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	padding: 40px;
+	padding: 60px 40px 40px;
 	display: flex;
 	flex-direction: column;
 	gap: 28px;
 	background: var(--white-color);
 	border-radius: 15px;
 	transform: translate(-50%, -50%);
+	.cross {
+		position: absolute;
+		top: 18px;
+		right: 18px;
+		width: 18px;
+		height: 18px;
+		span {
+			left: 8px;
+			height: 18px;
+			&::before {
+				height: 18px;
+			}
+		}
+	}
 }
 
 .contacts-data-flex {
